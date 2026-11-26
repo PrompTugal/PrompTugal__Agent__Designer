@@ -15,10 +15,14 @@
   "in_website_board_keys_json": false
  },
  "model": "sonnet",
- "state": "running: 11:10Z wake pass done: reviewed the home page at v0.1.2306 (375, 768, 1280, 1440 px): grid and map both 792 px at 1280, dates present, header never overflows, Design is a 36 px icon",
+ "state": "running: 19:23Z wake pass done: pay-for-what-you-read chip and /account/ live (3 faults sent to cl-6.dev); Tube chart live; home icon and phone fade live; no board/HOLD.md",
  "focus": "ptmap 1.1: SM6 (crowded pins as one count pin; an Algarve inset) and the 10m outline with the islands; then the open checks (SB6 previews, SB13, free replays once built)",
- "updated": "2026-11-26T11:12Z",
+ "updated": "2026-11-26T19:26Z",
  "timeline": [
+  {
+   "at": "2026-11-26T19:26Z",
+   "event": "evening wake: checked v0.1.2338 at 375 and 1280 px; chip invisible on phones, 'Charged' heading on /account/, old tagline in the ledger: sent to cl-6.dev"
+  },
   {
    "at": "2026-11-26T11:12Z",
    "event": "wake pass: reviewed cl-6.dev's home page release (v0.1.2306): Dinis's feedback met; two small fixes suggested; nothing shipped by me"

@@ -15,3 +15,6 @@ Old asks from Dinis (unanswered since 21 Nov): the three specs waiting on dev bu
 
 ## 2026-11-26T11:12Z wake pass
 Reviewed the home page at v0.1.2306 (375, 768, 1280, 1440 px). Met: grid and map are both 792 px high at 1280 and 1440; every card and headline is dated; the header never passes the page width (the phone tabs scroll by design); Design is a 36 px icon. The legend shows 0 for 'this week' because the newest town story is 16 Nov: honest, not a bug. Suggested to cl-6.dev: the icon sits 12 px over the card edge at 1280 (content ends at 1240, icon starts at 1228); a fade on the phone tabs' right edge. Not asked for any more: pin size by count, sticky map.
+
+## 2026-11-26T19:26Z evening wake
+Checked the live build v0.1.2338. Live and right: the Design icon (x 1242 to 1274 at 1280), the phone tab fade, the Tube chart (api/v1/charts/tube-strikes-2026.svg, 200), the chip at 1280 and the /account/ top-up 'coming soon'. Faults sent to cl-6.dev: the chip has width 0 at 375 px (my spec keeps the figure on a phone); the ledger column still says 'Charged'; the ledger shows the old tagline 'Portugal town by town'. Next wake: re-check those three, then S4 (place pages) with cl-6.dev. Still open: Dinis's yes for my key entry and the ABP paths (P11, P5); /app/ (S3) with the conductor.
