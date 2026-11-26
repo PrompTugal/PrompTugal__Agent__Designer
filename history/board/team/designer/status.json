@@ -1,0 +1,690 @@
+{
+  "agent": "designer@PrompTugal.dinis",
+  "focus": "How PrompTugal.news looks, in brand v2.0: the live public data up front on every place and on the home page (never a JSON link for a reader), the /values/ page and the news organisation pages, and review of designer.places@'s branch.",
+  "state": "working",
+  "updated": "2026-11-21T08:40Z",
+  "done": [
+    "08:40 wake: designer.places@'s ff8c98c21 merged; ptmap 1.0.2 checked as built on /portugal/ (as specified, 4 renders, no errors); for 1.1: the Algarve's 17 crowded pins (SM6, a count pin and an inset) and the finer outline, in board/spec-the-shared-map.md",
+    "19:39 wake: designer.places@'s fc4d549c3 merged; library requests none; 390 px sweep of /, /articles/, /companies/, /portugal/, /media/, /about/, /newsroom/: no overflow",
+    "08:38 wake: designer.places@'s phone fit for the 'Portugal in Europe' inset merged; library requests none; the 20 Nov debrief",
+    "19:49: ptmap 1.0.2 (rights@ R12): world-atlas's ISC licence in full in the header, code identical to 1.0.1; new sha384s",
+    "19:45: ptmap 1.0.1 (security@'s two lows on 1.0.0): el() sets own keys only (tested against a polluted prototype); the ISC notice already carried, rights@ to confirm; design/shared-map/v1.0.1/ with new sha384s",
+    "19:37 wake (now twice a day): designer.places@'s five commits onto dev by merge (the 13-hour stale threshold, its signing key); library requests none; the shared map ptmap v1.0.0 already out at 9f5ba1d44",
+    "19:30: the shared map, ptmap v1.0.0 (Dinis 19 Nov ~17:40; civic.b@ asked for one vendorable piece): design/shared-map/v1.0.0/ (ptmap.js, ptmap.css, manifest.json with sha384), spec board/spec-the-shared-map.md (SM1-SM5, safety), demo pictures at 1280 and 390, light and dark; no AI; the outline Natural Earth (public domain)",
+    "17:44: twice-a-day guidance read: the stale threshold moves to about 13 hours (asked designer.places@ for by-place.js); conductor.b@'s camera and map word is not yet on dev (board/guidance/2026-11-19-cameras-as-links-and-the-map.md missing at 17:44), so the shared map look waits for it",
+    "14:35 wake: quiet; designer.places@'s sweep onto dev; library requests none; no new design asks",
+    "12:34 wake: quiet; designer.places@'s sweep onto dev; library requests none; no new design asks",
+    "10:34 wake: quiet; designer.places@'s sweep onto dev; library requests none; no new design asks",
+    "08:37 wake: designer.places@'s age-tag fix for the live band onto dev (passes; checked rendered, no loop, no error); library requests none",
+    "06:36 wake: designer.places@'s sweep onto dev; library requests none; dev@'s sites bar v1.2.0 checked: the phone row (SB10) and desktop line (SB11) pass; the switcher is done as designed",
+    "04:36 wake: designer.places@'s midnight fix onto dev; library requests none; dev@'s one-way build checked: SB8, SB9, SB12 pass; the phone row (SB10) still to build",
+    "03:20: the one switcher on every site (Dinis 19 Nov ~03:18): sites bar v1.2 in board/spec-the-sites-bar.md (SB8-SB13: replaces em-net and the side tab; same tab; a sideways row on a phone with the current site centred; all at a glance on desktop; promptugal.news first); phone pictures redrawn",
+    "02:45 wake: designer.places@'s slim one-value band onto dev (passes); told it the one-paragraph trailer rule and how to sign (R16); library requests none for designer@",
+    "01:55: rights@'s design GO on the free replays page recorded (FR8 nothing overlaps the player, FR9 a logo only if it links to YouTube and is never the most prominent, FR10 no 'YouTube' or 'YT' in our names); R16: my SSH signing key made with newsroom/tools/signing-setup.sh (private half only in ~/.sg-send/ssh/), its public half and my session published on designer-promptugal-4 in board/keys.json; this commit is the first signed one",
+    "02:15: Dinis's 'show the past' and 'every prediction kept and checked' (19 Nov): the one way every site draws them, board/spec-past-and-forecast.md (PF1-PF9: observed solid, forecast hatched, today marked, gaps as gaps, the record's first day, what we said in green outline beside what happened with the gap in plain units, a computed track record line), pictures at 1280 and 390, light and dark, illustrative values only; for weather.b@ first",
+    "01:45: the free replays page (Dinis 19 Nov, guidance section 3; rights@'s C1-C6): board/spec-the-free-replays-page.md (FR1-FR7), mock-ups at 1280 and 390, light and dark (no AI, no YouTube asset; the player a labelled stand-in), a text credit only until rights@ quotes the branding guidelines; draft until rights@ says go",
+    "00:55 wake: designer.places@'s sweep onto dev; library requests none; dev@'s sites bar v1.1.0 checked at 1280/390, light/dark: SB1-SB4 pass (bar, current mark, pop-up, phone sheet with Escape), previews not yet (no site serves /preview.svg), the old 'Also from' tab now a duplicate; IPMA off promptugal.news (billing rule): the live-data spec now belongs to the weather site",
+    "22:45 wake: designer.places@'s sweep onto dev; library requests none for designer@; the day's debrief closed. New from Dinis (London, cells.b) has no design ask yet",
+    "22:30: the sites bar across all 13 *.promptugal.news sites (Dinis, 18 Nov ~22:00): board/spec-the-sites-bar.md (SB1-SB7 and safety), markup and CSS (design/sites-bar/sites-bar.html.txt), the 320x180 preview card template each site fills from its own numbers, pictures at 1280 and 390, light and dark; no AI",
+    "20:45 wake: quiet; designer.places@'s sweep onto dev; library requests: none for designer@; nothing of my open specs built since 18:50. Passes: opening and pre-review inline (one cherry-pick of status files, no web), post-review as a Sonnet sub-agent",
+    "18:55 wake: inner passes as sub-agents (pre-review PROCEED); designer.places@'s sweep onto dev; library requests: none for designer@; dev@'s 'Licences on this page' checked on Faro: a clear summary, but no per-value mark yet (LM1), one named licence and '47 other sources'; the 'Also from' tab covers content at 1280; the town band now live from data.promptugal.news, no JSON links",
+    "16:50 wake: inner passes as Sonnet sub-agents (sub-agents now granted): opening and pre-review PROCEED; designer.places@'s sweep brought onto dev; the library's requests channel: nothing for designer@; library.promptugal.news re-checked live: changes 1, 3, 4, 5 pass, 2 (ART) next run",
+    "16:05: the library's requests channel read (Dinis 16:00): nothing addressed to designer@ yet; added to my wake routine with the inner passes (debrief)",
+    "16:05: library.b@'s first build (library.promptugal.news v0.1.3) checked at 1280 and 390, light and dark: faithful to L1-L9, fits, no errors; five changes sent to library.b@ (the card's place on a phone, our articles misfiled under WS26, the one-spine shelf, JSON links labelled, the licence mark in Evidence)",
+    "15:50: library.promptugal.news's look (Dinis, 18 Nov ~15:30: 'make it look really good ... like a library website'): board/spec-the-library-look.md (L1-L9, call numbers), the home page and the reading room with its catalogue card as markup (design/library/library.html.txt) and pictures at 1280 and 390, from this site's real articles, places and media; no AI. Passes: opening and closing by me, security post-review of the diff by me inline: clean (no key, token or private contact; agent names only; licence marks shown; only design/ and board/ paths). Sub-agents are not in my ABP grant, so the passes ran inline",
+    "15:05: conductor.b@'s note on Dinis's /principles/ and /report/ for every site: the link pattern for dev@ (board/spec-principles-and-report-links.md, PR1-PR4), sent on dev@'s lane",
+    "14:50 wake: designer.places@'s sweep brought onto dev (passes); Dinis's 14:25 licence word: one licence mark for every value's line (board/spec-the-licence-mark.md, LM1-LM5, CSS design/licence/licence.css, picture on Faro's band; the licences shown are placeholders for the source readers to confirm)",
+    "12:45 wake: designer.places@'s sweep brought onto dev (passes); nothing of my specs built since 02:45; quiet wake",
+    "10:45 wake: designer.places@'s sweep brought onto dev (passes); nothing of my specs built since 02:45; quiet wake",
+    "08:45 wake: designer.places@'s sweep brought onto dev (passes); nothing of my specs built since 02:45; quiet wake",
+    "06:45 wake: designer.places@'s sweep brought onto dev (passes); nothing of my specs built since 02:45; quiet wake",
+    "04:45 wake: designer.places@'s sweep brought onto dev (passes); nothing of my specs built since 02:45; quiet wake",
+    "02:50 wake: designer.places@'s daily debrief and sweep brought onto dev (passes); the home page re-checked after the five sites' band: fits at 390, the lead's right half still empty (LD1), '1 airline flights' noted",
+    "00:50 wake: designer.places@'s sweep brought onto dev (passes); the phone overflow is fixed (pages fit at 390 and 360 px at v0.1.1762, after conductor@'s top-bar rework): spec closed, ask withdrawn; the 18 Nov debrief",
+    "22:50 wake: designer.places@'s sweep brought onto dev (passes); nothing of my specs built since 20:45; the phone overflow still live at v0.1.1753 (since 15:18)",
+    "20:50 wake: designer.places@'s sweep brought onto dev (passes); dev@'s 'Since your last visit' on the You page checked: works (Loulé 6, Algarve 15, Portugal 22) but unstyled: the F2 look as CSS for its exact markup (design/one-reader/since.css, tested at 390 and 1280) and four wording notes; the phone overflow still live (434 px)",
+    "18:50 wake: designer.places@'s debrief and status brought onto dev (passes); the phone overflow still live at v0.1.1740: sent to dev@ and conductor.b@ on their lanes, the place-id bug to ontologist@ (my key sends as 'designer-4' in agent_inboxes.py: ids map to roles by stripping '-promptugal')",
+    "16:55 wake: designer.places@'s /media/ jump chips brought onto dev (passes); found every page 434 px wide at 390 since 'Pay for what you read' joined the masthead line (69dc40999): a tested CSS fix in board/spec-the-masthead-on-a-phone.md for conductor@ or dev@ (assets/top is outside my grant); the provenance strip read: clear, one note (the ladder as a position)",
+    "14:50 wake: designer.places@'s outlet facts band brought onto dev (passes, checked on Barlavento); dev@'s pairing page (dry run) checked against P1-P4: works, five notes (the QR code too dense with the full key: use the short form; step line and reassurance; a countdown; hide the raw JSON; two choices, not two headings)",
+    "12:50 wake: designer.places@'s sweep brought onto dev (passes); dev.places@'s /media/ look hooks read live: a clear step up; six notes in the media spec (a WordPress JSON link listed for readers on Barlavento, the lost lede, Lisboa still a false gap, a place filter on top of the kind groups, the flat 'covering the area' column, MP5)",
+    "11:00 wake: designer.places@'s dark-theme Local media cards brought onto dev (passes); one reader across devices (Dinis, 17 Nov morning; designer@ named for the pairing screens and the personal front page): board/spec-one-reader-the-look.md, P1-P4 (four pairing screens with a match code) and F1-F4 ('Reading from', 'Since your last visit' in three rings, the first-visit question), pictures from the real place files (design/one-reader/mock.mjs, no AI)",
+    "08:55 wake: designer.places@'s sweep commit brought onto dev (passes); the home live panel as a PT decision page (/newsroom/design/decisions/the-home-live-panel/: A strip, B ink band, C the lead's empty column, C recommended), for sherpa@, synthetic@ and security@ to weigh in; only 6 of 17 towns had a station reading at 07:19 (LD5)",
+    "06:50 wake: designer.places@'s two home live-strip variants brought onto dev (pass) and merged with LD1 into one panel in the live-data spec; LD1-5, MP1-3/5-9 and the place-id bug unchanged",
+    "04:50 wake: designer.places@'s 'Show all' in the page's language brought onto dev (passes); media re-checked: the place-id bug grew (lisbon 10, madeira 6, acores 6), the Algarve now has 3 outlets; the 17 Nov debrief",
+    "02:50 wake: designer.places@'s ask 12 brought onto dev (passes; grouping aligned on place first); dev.places@'s 'where local journalism is missing' read: strong, but Lisboa shows as a false gap (7 records use place:lisbon, the id is lisboa; madeira and acores match no place): to ontologist@ and dev.places@ in the media spec with MP8 and MP9",
+    "00:50 wake: designer.places@'s Local media cards (588ba68b5) checked rendered and brought onto dev; reviews logged in board/team/designer.places/review-by-designer.md; /media/ re-checked: 'Latest headlines' from the feed is in (MP4 in part), MP1-3 and MP5-7 open; LD1-5 not built, the home page still links IPMA's and adsb.lol's JSON (LD2)",
+    "23:05 wake: brought designer.places@'s now-band dates onto dev (passes); the /media/ pages read live (v0.1.1668): spec board/spec-the-media-pages.md MP1 to MP7 with a mock-up of the index grouped by place from the 81 real records (design/media/mock.mjs, no AI); the Algarve has one outlet while Barlavento and Postal do Algarve, the most cited, have none; LD1 to LD5 and V1 to V6 not built yet",
+    "21:05 wake: brought designer.places@'s restart onto dev (its key designer.places-2-promptugal, notes, status, run report: passes; keys.json conflict resolved by applying its two changes to dev's file); the look of /values/ from journalist@'s draft: board/spec-the-values-page.md (V1 to V6) with pictures (design/values/mock.mjs, no AI); two JSON links in the draft flagged; LD1 to LD5 not built yet; LD6 in part (datasci.places@ refreshed the readings at 20:17)",
+    "19:55 (restart, session_01Kw9UwEq1n6W1EdcdvX5uGE) onboarded; key designer-promptugal-4, -3 superseded; the live-data loop: board/spec-the-live-data-up-front.md (LD1 to LD6) with mock-ups from the real IPMA files (design/live-data/mock.mjs, no AI; pictures design/decisions/live-data/): the home lead's empty right half becomes 'Now in the Algarve' (17 towns, the warning in words, five days); the home page's live line still links api.ipma.pt JSON (LD2); the five days under every town band; readings 5 h stale (local-now.mjs not running)",
+    "10:45 The app's empty-day note in the site's look: pass; Wednesday no longer struck in the app's strip, flagged; the 12 November debrief",
+    "08:50 NE3, NE4 and NE5 pass live (the app's empty day names where the programme is; the 0-item day page; picks stay in the browser); two small notes: the app's note in the site's sand-and-ink, not red; drop 'Nothing matches' above it",
+    "06:50 The websummit-only notes re-checked: the agenda's and the day pages' (NE1), Cloudflare's and the Fringe showcase now in place; two small notes (link the schedule; the company note under the lede); sherpa@'s NE5 (the app's empty Thursday) and NE4 backed",
+    "04:50 The websummit-only switch checked live: the companies note and the empty People page pass, the recovery page passes in substance (no Fringe showcase); no note on the agenda, the day pages (NE1) or a company with facts taken off: to dev@",
+    "00:50 sherpa@'s NE1 to NE3 on the note: the agenda's version names where the full programme is (Web Summit's app and schedule), the empty page's version (People, 0 of 285: why, what is still there, the way back), the app's picks line pending dev@'s answer; pictures added",
+    "23:00 The websummit-only pass, my step: the note (sand, an ink rule, not red; two lengths, Dinis's five points in order) and the recovery page (by kind, the route for one fact, the method, the Fringe as showcase): board/spec-the-not-everything-note.md, pictures on the live companies list and Cloudflare's page; logged in the pass",
+    "12:45 The live sources strip checked live (v0.1.1231): L1 to L6 pass, the storm site's update time read from its data, Lisbon Fringe beside it now live",
+    "10:55 The live sources strip (Dinis 10:00: the storm site at the top, Lisbon Fringe beside it once live): board/spec-the-live-sources-strip.md, L1 to L6, pictures on the live home page; the storm page's S1 to S4 re-checked: pass",
+    "08:45 The 11 November hand-over debrief; nothing new to check (inbox, articles' images all present)",
+    "06:55 /storm/charles/ read in E (live, light and dark): four polish notes for dev@PrompTugal.vicky (board/spec-the-storm-page-e.md): blue rules off-brand (colour only for IPMA's levels), the timeline folded after five, no 'Now' in the nav, one 'Last checked' with its age",
+    "04:45 Products as diamonds with a legend entry: pass; every published article has its image, and each image file an article points to exists and is recorded",
+    "02:50 Products in the company mini-graph: drawn as the place mark and missing from the legend; a product mark (an ink diamond, a green dot when it has a GAMMA-Ray card) proposed to dev@",
+    "00:55 Images for the two published articles that had none, no AI: 'Speed where it's safe' as its own table (the table tool now reads 1,007 and empty cells, and shades each column on its own scale with --per-column), 'Web Summit's nineteen passes' as its own nineteen colour samples (design/infographics/passes/make.mjs; 256 colours, dithered, as 64 banded the gradients)",
+    "22:50 Re-checked: /agentic/ A to Z with a stage switch, chips named, nav fixed (H3 passes); the company Spectrum block live on AISLE and GetVocal (H10 passes); TestFlight banner one line",
+    "20:50 Checked dev@'s builds live: E's masthead on every page passes T1 to T8 (T3 near: Indi's two-line TestFlight banner makes the phone top 247 px); /agentic/ and the cards: ranked by stage against GAMMA-Ray's 'nothing is a judgement' and H3's alphabetical, chips without dimension names, 'Now' marked on /agentic/; the interviews after the lead with a real frame (R5 met)",
+    "18:50 Checked live: the E theme is on the home page only (inner pages keep the old header, whose wordmark is 180 px, under the brand's 240 minimum; the 404's wordmark still broken), all for dev@ under T1 and T7; D6 (past days) passes, three wording slips to dev.pages@; the storm page handed to Vicky's dev@, stood down; debrief refreshed",
+    "17:10 The Front Page (E) as the whole site's theme (Dinis 14:35): board/spec-the-front-page-theme.md, T1 to T8 (E's masthead on every page with the tools in its date line; section heads, kickers, dark; the 404's broken wordmark); before and after pictures of companies, an article and the agenda; round 4's content now built inside E; sherpa@'s three round-4 notes in H11 and H12",
+    "15:00 The redesign, round 4 (Dinis 12:40, 'pt.news is about agents'): B r3 recycled; the interviews lead as video cards, the summit now (today's seven agent sessions, on now and next), the scores, and the newsroom at work as a swimlane with every hand-off (a vertical timeline on a phone); spec H11 and H12",
+    "12:55 sherpa@ read round 3: conditions 1 to 3 met, 4 (contrast) on the built page; its 'Watch · length' added to H2; the company page's Spectrum block designed (H10, light and dark)",
+    "11:10 The design flip decided: B, round 3 (sherpa@'s four conditions met: a legend line, one interview before the strip on a phone, three rows then 'All 6', contrast measured AA+), with the six real GAMMA-Ray cards and its own words (the stage is the sum of levels; 'not yet evidenced', never zero); spec board/spec-the-agentic-home-page.md (H1 to H9) for dev.pages@",
+    "09:00 The design flip round 2: B worked through, light and dark, and round 1 corrected: GAMMA-Ray gives four levels and a stage per product, not a score or rank, so the top is a Spectrum strip linking to each card (security@'s link-only rule); 'GAMMA-Ray in one minute'; the wave in the footer",
+    "07:05 THE RESTART's design flip, round 1: three Portuguese directions inside brand v2.0 (A Azulejo, B Calcada, C Jornal) with the GAMMA-Ray leaderboard, the interviews and the graph; recommended B; content/newsroom/design/decisions/the-design-flip.md",
+    "22:45 /contribute/ checked live (v0.1.912): the rules and the wall pass in light and dark; fixed a stray 'into the page -->' that my fragment's comment caused; og:image left to dev@ (board/spec-contribute-page.md)",
+    "20:56 /contribute/ (Dinis 20:20): the rules of the game as an HTML infographic in brand v2.0 (design/contribute/rules.html, no AI, the journalist's words), its share picture (rules--share.png), and the wall's look (counts, cards, share pills, 'name not shown'); board/spec-contribute-page.md for dev@ and dev.pages@",
+    "18:42 /app/ re-checked after dev@'s b0c2dee61f: in brand (ink, the wordmark SVG, Plex, Newsreader, paper); two leftovers (the wordmark under 240 px in the bar: the stamp instead; one default-blue link); sherpa@'s AP3 designed: the bar's right button by context (Full screen in the pane, Install on a phone, News once installed)",
+    "16:48 the news app on the web (/app/, dev@'s step 1) read for the brand: works and reads clearly, but its own look (navy, Georgia, the system font, its own red); the mapping to brand v2.0 is one :root block (board/spec-the-app-on-the-web.md) for dev@",
+    "14:46 the daily hand-over debrief (2026-11-09-handover.md); the strip of days re-checked after dev.pages@'s D1 work",
+    "12:42 /events/ re-checked as the week's overview: about 12 phone screens (was 40), today and tomorrow first: D2 passes; the brief's list pages and days now all pass but D6 (past days, from tomorrow)",
+    "10:48 the summit's day pages checked: D1, D2 (a page per day), D3, D4 (the correspondent's own five), D5 pass; /events/ still 40 phone screens, for dev.pages@. An image for Angelo's new article web-summit-wristband-queues (2 calls, 0.28 USD; the first misattributed 'the crush' to past attendees and drew a flag-like banner)",
+    "08:42 the list pages re-checked at v0.1.808: L1 to L6 pass on companies, people and articles (phone lengths 8.7, 6.6, 6.9 screens; companies' switch and search now above the prose)",
+    "04:48 the list pages checked at v0.1.782 (board/spec-list-pages-and-days-check.md): switch, defaults, cards and search pass on people and articles, mostly on companies; length fails (companies about 25 phone screens, people 43); companies' switch under four paragraphs of prose. WK1's table image redrawn after the Monday re-count (no AI)",
+    "02:52 (9 November) back on at Dinis's word (board/guidance/2026-11-09-the-summit-set.md, every 2 h): the acceptance check for the list pages and the summit's days written before dev.pages@ builds them (board/spec-list-pages-and-days-check.md: L1 to L6, D1 to D6, from the two decisions of 6 November); nothing shipped yet to check",
+    "00:48 (8 November) WK1's table image redrawn after the Sunday re-count (no AI); sherpa@'s A2 designed: the reading credit said plainly (board/spec-the-reading-credit.md: one line 'Free to read', no ticking amount in the header, the numbers on /account/)",
+    "23:42 newsletter P2 (thumbnails) passes; took designer.experiments@'s refreshed debrief, status and its day's ten run reports onto dev (its own paths)",
+    "22:45 writer@PrompTugal.angelo's interactive agent-setup guide read for the brand (39e19860fe): in the brand (the site's tokens, no own colours; options 40 px tall); one note: the sticky 'Read this as' bar covers a section's heading after a jump (scroll-margin-top on the headings). S26 and S27 published with their own covers",
+    "20:42 WK1's table image redrawn after the journalist's correction (PITCH's group rounds, the semi-final and final on Centre Stage), no AI, the table tool's long-note column fixed",
+    "19:44 the first evening newsletter edition checked (spec's evening section): E3 to E5, E8, P5, E9 pass; new V1 (the same stories listed twice), V2 ('five things' listing two, tomorrow), V3 (summaries cut mid-sentence) for dev@; E1, E2, P1, P2, P4 still open",
+    "18:48 an image for the new article plan-your-week-by-field (WK1): the AI draft had most of its 56 numbers wrong (0.15 USD, rejected), so a new tool draws it from the article's own table with no AI (design/infographics/table/make.mjs): every number exact. OpenRouter works again. WS125's corrections are not in its image. sherpa@'s G6 (the credit pill on the graph pages) is H7's design (board/spec-home-page-designs.md section 9): the pill into the Ask panel on a phone; the currency stays Dinis's",
+    "17:42 the daily debrief refreshed with the day since 00:48 (board/team/designer/debriefs/2026-11-07-handover.md, section 5); the evening newsletter is due 19:30 Lisbon, checked at the 19:33 wake",
+    "16:45 investors@'s new investor site read for the brand (board/spec-investor-decks-brand.md, 'The investor site'): AI images unlabelled (S1), 'PrompTugal' without '.news' (S2), the decks' off-palette accents (S3), the section row cut on a phone (S4). dev@ put the lead's phone picture on the default design too (E10 done). The evening newsletter not out yet at 16:35",
+    "15:42 H6 passes on A, B, F; E10 (the lead's phone picture) live on design E; the default design still shows the landscape card on a phone: asked dev@ for the same picture there",
+    "14:48 the home designs re-checked at v0.1.561 after dev@'s 7c811c6d1: D4 and D11 pass on every design; H6 nearly (the tab bar's 11.5 px labels, B's 14 px 'All stories', F's 11 px week heading and times); E10, the lead's phone picture, still not wired. The deck stylesheet still off-brand after investors@'s fix pass",
+    "13:42 the eight home designs re-checked at v0.1.545: D4 on D, F, G, D11 on E, F, G and H6 on A, B, F unchanged since 04:45; dev.pages@'s status unchanged since 04:13; told dev@ and conductor.b@",
+    "12:42 offline round 2 re-checked at v0.1.532: O3 passes (the offline page is a page of the site, grouped and timed), O4 passes with two refinements for dev@ (one 'kept' mark per story, none on in-page section switches)",
+    "11:45 agent-setup-guide corrected (four kinds of barrier, level 2 split): 4 redraws rejected (one called the guide's levels RiskMandate's, against the article; one with the ladder out of order; one renumbering six steps as four) and the existing image kept: it still agrees with the corrected text (0.59 USD, nothing placed). S24 came with its own images from Vicky's desk. The investor decks (now 16 PDFs) still without the brand fixes: re-sent to investors@ as a one-file change",
+    "10:48 an image for the new article brazil-last-year-counts (BR1): 3 calls, 0.43 USD; rejected a chart that drew ranges as single bars (2026 looked like a fall) and meaningless colour segments, and a headline 'One Count' against the article's point. dev@'s offline fixes re-checked: O1, O2, O5 pass; O3 in part (no top or tab bar, no copy times or groups, days out of order); O4 not yet",
+    "09:45 sherpa@'s offline review answered (board/spec-offline-mode-design.md, round 2; pictures design/decisions/offline/4-page, 5-kept): the offline page in the site's look listing what is kept and the saved articles by title (O3), a '✓ kept' mark on links that will open offline (O4), the credit pill gives way to the Offline pill (O5); O1 (tabs not kept) is dev@'s. dev@'s newsletter E7 and P6 shipped",
+    "08:48 an image for the new article brazils-doors-into-europe (BR6): 3 calls, 0.43 USD; two map drafts rejected for invented geography (links from Porto Alegre and Rio the article does not make), the explainer style placed, a misattributed quote note removed by hand. The newsletter email re-checked at v0.1.480: E3, E4, E5, E6 and the count pass",
+    "07:42 the first newsletter edition (Saturday morning, out on time from data) checked against board/spec-the-daily-newsletter.md: E9 passes; registration listed twice, Lagos unmarked as the Algarve, 'five things' listing four, inline links and long lines in the email, five long stories, the old tagline at the foot, no masthead, band, thumbnails or cards, full-width Add buttons, the evening edition listed early: all for dev.pages@ (the spec's check section; picture design/newsletter/check-2026-11-07-morning.jpg)",
+    "06:42 the lisbon-awards image redrawn after the journalist's 06:50 correction (two of the seven winners work on AI, not three; the old image marked BloodFlow as AI and said 'three'): 2 calls, 0.29 USD, the first rejected for a duplicated line. devops@'s 130 MB note read: design/shots (40 MB) is CI's screenshots and already excluded from the deploy; mine are design/infographics (12 MB, shown on pages) and design/decisions (4.8 MB)",
+    "05:42 synthetic@'s F52: the Rio infographic redrawn from the corrected article (no old headline, no claim the ten fly the new route; the word 'Gol' painted on the plane removed by hand); a sweep of articles corrected after their images found one more stale: italy-and-portugal-in-beato (19:25 and 'Did It', corrected at 00:55), redrawn. 5 calls, 0.72 USD (drafts rejected: a livery mark, an invented eleventh company, drawn flags)",
+    "04:52 the designs re-checked at v0.1.437 (spec section 10: D4 on B and C, D6, D11 on C, F's small labels now pass; the rest listed); the investor decks read against brand v2.0: four small fixes for investors@ (board/spec-investor-decks-brand.md: the logo SVG not typed text, the stamp in footers, the brand's dark accents, 12 pt captions)",
+    "03:50 sherpa@'s H6 and H7 answered (spec section 9): a 12 px type floor and 24 px targets with the live selectors that fall under it on A, B and F; the credit pill into the Ask panel on a phone; E6 bylines in words and E9 one Ask on a phone. Took designer.experiments@'s daily debrief and status",
+    "02:45 re-checked at v0.1.413 (spec section 8): F and G in Silvio's colours with the contrast fixes, and Silvio credited (D3, D14 pass); D4, D6, D7, D11 and E10 unchanged, each now with its exact one-line fix for dev.pages@; brand-decisions.md cites conductor.b@'s verbatim record (9176b834)",
+    "02:05 Dinis's answer on the palettes (about 01:20, relayed by conductor.b@): F and G keep Silvio's colours in their own designs, E's deepened green stays; recorded in board/team/designer/brand-decisions.md with the contrast fixes (four text shades darkened, a scrim on G's hero) and handed to dev@ (board/spec-home-page-designs.md section 7)",
+    "01:45 re-checked the eight designs at v0.1.400 (spec section 6): E and F section rows fixed, the pill folds on a phone; still open D4 (wordmark), D6 (D's countdown), D7 (C's row), D11 (Now and next far down on C, E, F, G), D14 (Silvio not credited on the page). sherpa@'s E10: a phone picture for the lead (720 x 900, portrait, smallest type about 15 px) made for your-first-day-at-web-summit (1 call, 0.15 USD) with a new 'phone' style in the image tool; the markup for dev.pages@. Reviewed and took designer.experiments@'s width C with a real article and rail (picture in the width spec)",
+    "00:55 AI infographics for six new articles (agent-setup-guide, how-agents-avoid-collisions, how-the-agents-talk, mistakes-we-made, rio-ten-startups-to-lisbon, who-does-the-work): google/gemini-3-pro-image, 11 calls, 1.64 USD; five redraws rejected (main shown as live, a garbled label, invented clock times, a drawn face and a logo, agents labelled anonymous, a misquoted company); every published article has an image",
+    "00:48 the eight home page designs checked live at v0.1.390 (board/spec-home-page-designs.md section 5; pictures design/home-designs/check-v0.1.390--*.jpg): every design in the brand, from data, no lab chrome, no sideways scroll; open for dev.pages@: wordmark under 240 px (B, C, D, F, G), D's countdown on a phone, the section row on a phone (C, E, F), Now and next too far down on a phone (C, E, F, G); the green for Dinis. Inbox drained (empty); no new worker commits",
+    "00:08 the home page in eight designs (Dinis about 23:20, relayed by conductor.b@, checked against its brief): board/spec-home-page-designs.md: one colour rule (A to D in Silvio's classic palette, which is the brand; F mapped; G's hero redrawn), checks D1 to D14, notes per design (B overflows a phone, C/F/G clip the wordmark, counts hard-coded), and the picker's first pictures in design/home-designs/shots/ for dev@",
+    "23:47 mock E checked live at v0.1.379 (board/spec-front-page-e.md section 3; before and after in design/decisions/front-page-e/check-v0.1.379--*.jpg): ten of thirteen pass; open E6 (the section row still cut on a phone) and E10 (Now and next last on a phone) for dev@; E3, the band's deepened green #0a3a14, for Dinis",
+    "23:42 one page width (Dinis 22:55): reviewed and took designer.experiments@'s three variants; C recommended as a PT decision (board/spec-one-page-width.md, pictures design/decisions/one-width/); sent to dev@ and the worker. Inbox designer-3 opened and drained (empty)",
+    "22:58 session 3 on account B: the mock E brand mapping and acceptance check E1 to E13 for dev@ and dev.pages@ (board/spec-front-page-e.md; pictures design/decisions/front-page-e/): the mock's palette mapped to brand v2.0, its 'THIS WEEK' label fails AA (3.1), on a phone the countdown loses its value, the section row is cut and doubles C's tab bar, Now and next comes last; a deep green band is a question for Dinis",
+    "22:50 an AI infographic for angelos-communication-graph (google/gemini-3-pro-image, 2 calls, 0.28 USD; the redraw rejected for drawn faces and a garbled word); every published article has an image",
+    "22:47 onboarded on account B: key designer-promptugal-3 (session 2's superseded 22:46), released v0.1.370; designer.experiments@'s final hand-over taken from its branch; told conductor.b@ and the conductor on their inboxes",
+    "21:45 final hand-over debrief (refreshed) at the conductor's relay of Dinis's word: the role moves to account B; this session (2) stops",
+    "21:30 spec check of the live front page (v0.1.347) against A with C's top, at Dinis's word via the conductor: F1 to F11 in board/team/designer/sessions/session_018yvwtQG4hfVbvycXkifYXc/spec-check-front-v0.1.347.md, side by side pictures in design/decisions/the-front-page/check-v0.1.347--*.jpg, a row in board/passes/2026-11-06-the-front-page.md; the before in the vault (before-after/front-page-v0.1.347/)",
+    "An AI infographic for brazils-startup-house-in-lisbon (1 call, 0.15 USD, checked against the article first time); every published article has an image",
+    "The daily hand-over debrief (CLAUDE.md, Dinis 17:55): board/team/designer/debriefs/2026-11-06-handover.md",
+    "An AI infographic for the new article brazil-on-the-stages (3 calls, 0.42 USD: one draft with duplicates and one with a misspelt company name rejected); every published article has an image",
+    "Six more AI infographics, so every published article now has an image: google/gemini-3-pro-image, 10 calls, 1.46 USD (four first drafts rejected for a garbled word, a leaked style note, a misspelt agent name and a garbled line with a pronoun; redrawn and checked)",
+    "The offline mode's design (row 3 of its pass): the badge and band with the copy's own time, Save for offline, the saved list with Clear offline data: board/spec-offline-mode-design.md, design/decisions/offline/",
+    "Took designer.experiments@'s daily hand-over debrief",
+    "C's top checked live (v0.1.298) and its before and after: /newsroom/design/v0-1-298-the-top-c/; still to do: the strip of days full width and all eight on a phone, one search on a desktop",
+    "Six AI infographics on the front page (OpenRouter topped up, credit 29.79 USD): google/gemini-3-pro-image, 8 calls, 1.15 USD; each read back and checked against its article; two first drafts rejected and redrawn; 1.05 MB in git",
+    "Reviewed and took designer.experiments@'s day root with my three notes done",
+    "The daily newsletter's design (Dinis, 16:20): board/spec-the-daily-newsletter.md (the email: masthead, numbered link references, 50-character lines, merged duplicates, the Algarve apart, the foot naming the agents and editors; the edition page: an edition band, thumbnails, lighter buttons, the byline) and design/newsletter/morning-email-example.txt from Saturday's real edition (the feature built with the clock set to Saturday)",
+    "Reviewed and took designer.experiments@'s day's graph root (Tree, Rings, Ledger)",
+    "Before and after of v0.1.280, Algarve Evolution as a mini-site: /newsroom/design/algarve-v0-1-280/ (the slider in the vault); fixes 1 and 4 in part, 2, 3, 5, 6 still to do",
+    "Spec check of v0.1.280: Powered by gone, the strip of days live on the front page but only about five of eight days fit a phone and the floating Ask covers it; C's top not started (session folder, spec-check-v0.1.280.md)",
+    "Reviewed and took designer.experiments@'s badge at card and page size, with board/spec-maturity-badge.md for dev.pages@",
+    "Algarve sprint, 14:38: the deploy is stuck at v0.1.269 (v0.1.270 and v0.1.271 with dev.portugal@'s mini-site committed, not served); said on the sprint's pass for devops@",
+    "Reviewed and took designer.experiments@'s maturity badge (three variants, accessible, from real data)",
+    "Algarve Evolution sprint: the mini-site design for dev.portugal@ (design/mockups/algarve/make.mjs, board/spec-algarve-evolution-minisite.md, 14:17) and a pass on its build with six fixes (board/spec-algarve-evolution-fixes-1420.md, 14:18); the 14:30 check on the pass",
+    "Dinis's four answers (13:20, board/guidance/2026-11-06-the-four-design-decisions.md) recorded: the top is C on every page with the strip of days on the front page (superseding my 13:45 PT decision for A), drawn with two refinements for sherpa@'s concerns (a Companies tab, Ask in the top row, the tab bar above the safe area); the front page, the summit days and the list pages decided as recommended",
+    "PT decision (Dinis, 13:05): the top of every page decided, A with the strip of days under it (sherpa@'s three refinements taken); decided picture on /newsroom/design/decisions/the-top-of-the-page/; my misattributions to sherpa@ corrected",
+    "The other three decision pages retitled as PT decisions, open for sherpa@'s and synthetic@'s weigh-in until 14:33 UTC; the band's first line reworded after synthetic@'s F45 ('Every fact links to its source, with the date we read it')",
+    "Reviewed and took designer.experiments@'s round 6 (claimed profiles, the maturity scale, provenance; search first leads with the box)",
+    "Three more decision pages, all listed on /newsroom/decisions/: the front page (A or C), the summit's days (go or change; how one day reads), how the companies, articles and people pages open; images in design/decisions/ (small framed JPEGs), full size in the vault",
+    "Reviewed and took designer.experiments@'s round 5 (decision pictures for every variation)",
+    "The first decision page, at Dinis's word (decisions as pages): /newsroom/design/decisions/the-top-of-the-page/ with today's top and A to D in the page (small framed JPEGs in design/decisions/, 712 KB; full size in the vault), each option's strengths, weaknesses, reviewers' findings, work, the recommendation and what happens after",
+    "Reviewed and took designer.experiments@'s round 4 (the people page with a switch, checked against the person rules; brand faces back on the switch pages)",
+    "Spec check of the live site at v0.1.210: of my specs, T5, P4 and P5 are live, P1 and Q9 partly; the top's Q1 to Q8 and the days and synthetic specs not yet; order proposed for dev@ (session folder, spec-check-v0.1.210.md)",
+    "Reviewed and took designer.experiments@'s round 3 (the articles page with a switch; both pages self-contained)",
+    "The synthetic readers page, designer's round: S9 the scoreboard as tiles and owners as bars, S5 a card per reader (SYNTHETIC, no face); spec board/spec-the-synthetic-readers-page.md; /newsroom/design/synthetic-round-1/; tool design/mockups/synthetic/make.mjs",
+    "Reviewed and took designer.experiments@'s round 2 notes (brand monograms, remembered view, agent bylines)",
+    "The front page, round 2: synthetic@'s run 6 answered (F35 blocking: bylines name the AI agent, spec P2 corrected; F36 the band under the top; F37 a readable card image on a phone; F38 B dropped); /newsroom/design/front-page-round-2/",
+    "Reviewed and took designer.experiments@'s companies round 2 (one page with a working switch); its pictures in the vault experiments/round-2/",
+    "Reviewed work/designer.experiments (round 1: companies, articles, Tuesday 10, A to C each) and brought it onto dev as one commit; its pictures in the vault (experiments/round-1/); notes for round 2 in board/team/designer/sessions/session_018yvwtQG4hfVbvycXkifYXc/review-designer.experiments-2026-11-06-0740.md; linked from /newsroom/design/#experiments",
+    "The summit days, round 1: the strip of eight days, a past day (v0.1.37 rebuilt from its tag with the clock frozen), a future day (Tue 10); spec board/spec-the-summit-days.md; before and after /newsroom/design/summit-days-round-1/; tool design/mockups/days/make.mjs",
+    "The front page, round 1: three mock-ups (A newspaper, B visual wall, C briefing first) answering sherpa@'s F1 to F8; spec board/spec-the-front-page.md; before and after /newsroom/design/front-page-round-1/; tool design/mockups/front/make.mjs; one AI image (PITCH story, 0.0675 USD, placeholder only)",
+    "Session 2 onboarded: new key designer-promptugal-2 in board/keys.json, session 1's marked superseded",
+    "The before and after of v0.1.123: a slider page in the vault (before-after/v0.1.123/) and /newsroom/design/v0-1-123-the-top-of-the-page/; the tool design/before-after/make.mjs",
+    "AI infographics, first ladder: the Brazil story on 4 OpenRouter models (5 calls, 0.325 USD; gemini-3-pro-image best, gemini-3.1-flash-image good value); the tool design/ai-images/gen.mjs, every call logged in the vault",
+    "The top of the page, round 1: the tagline on every page is the card's ('People and AI agents, reporting together'); nine quick fixes for dev@ and four mock-ups (A one bar, B slim nameplate, C app tabs, D the summit's days) in board/spec-the-top-of-the-page.md",
+    "The designer's public vault bar9wi87 (board/team/designer/vaults.json): images out of git, the vault key sealed to the conductor",
+    "Spec for the vault map page, the image queue (OpenRouter, ChatGPT) and a before and after article per design release (board/spec-vaults-images-and-before-after.md)",
+    "The business card: four proofs, final at Dinis's yes (white stock, tagline \"People and AI agents, reporting together.\", the agent's address); ordered by Dinis from ProntaPrint Chiswick, 100 cards; the shop's page /newsroom/orders/business-cards/ (v0.1.79)",
+    "The brand audit of every page (design/brand-audit-2026-11-06.txt) and the front page's design review (/newsroom/design/home-review/)",
+    "The newsroom move, row 2: design/ swept of old names; the section header spec for dev@ (board/spec-newsroom-section-header.md)",
+    "The mandate above the fold on / and /about/ (v0.1.74)",
+    "An image for every article: 2 styles, 3 layouts, 3 sizes, 60 images in design/infographics/out/, every word checked against its article; the spec to use them and to make each article a graph (board/spec-article-images-and-graph.md, v0.1.85)",
+    "The editorial board page /about/board/: the three editors and the nine agents, what each does and never does, how we decide (this wake)"
+  ],
+  "next": [
+    "ptmap 1.1: SM6 (crowded pins as one count pin; an Algarve inset) and the 10m outline with the islands; then the open checks (SB6 previews, SB13, free replays once built)"
+  ],
+  "asks": [
+    "Dinis: three specs (live data LD1-5, /values/ V1-6, /media/ MP1-9) wait on dev.places@ and dev@ to build them; none built in 11 hours. If the build desks are full, say which comes first (I recommend LD1-LD2: the home page still sends readers to JSON files)",
+    "Dinis: the investor site calls the company 'PrompTugal' (no '.news'); CLAUDE.md says 'PrompTugal.news' is the one spelling. Is 'PrompTugal' right for the company and its investor pages?",
+    "Dinis: your 01:20 answer was '1 yes, F and G can keep their own colours'; the question also asked about E's band in a deepened green (#0a3a14, live since v0.1.377). I read it as yes and kept it; say if E should go back to the brand green #006600 (board/team/designer/brand-decisions.md)",
+    "Dinis: decision pages and article images are small files in git because an encrypted vault image cannot be shown in a page; say if you want them elsewhere"
+  ],
+  "wakes": [
+    {
+      "started": "2026-11-06T01:33Z",
+      "outcome": "ok",
+      "release": "v0.1.64",
+      "line": "the newsroom move, row 2: design/ swept, the header spec for dev@"
+    },
+    {
+      "started": "2026-11-06T02:33Z",
+      "outcome": "ok",
+      "release": "v0.1.75",
+      "line": "the mandate above the fold on / and /about/"
+    },
+    {
+      "started": "2026-11-06T03:33Z",
+      "outcome": "ok",
+      "release": "this wake's",
+      "line": "ROLE.md and status.json; the editorial board page /about/board/"
+    },
+    {
+      "started": "2026-11-06T04:10Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "the debrief and handover, at Dinis's word"
+    },
+    {
+      "started": "2026-11-06T04:40Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "session 2 onboarded; the top of the page round 1 (tagline in v0.1.123, mock-ups); the designer's vault; before and after; the first AI infographics"
+    },
+    {
+      "started": "2026-11-06T05:34Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "the front page, round 1: three mock-ups, spec, before and after"
+    },
+    {
+      "started": "2026-11-06T06:34Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "the summit days, round 1: strip, past (v0.1.37 rebuilt), future"
+    },
+    {
+      "started": "2026-11-06T07:34Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "reviewed and took designer.experiments@ round 1 onto dev"
+    },
+    {
+      "started": "2026-11-06T08:34Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "front page round 2 (F35 to F38); designer.experiments@ companies round 2 taken"
+    },
+    {
+      "started": "2026-11-06T09:34Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "synthetic readers page S5, S9; designer.experiments@ round 2 taken"
+    },
+    {
+      "started": "2026-11-06T10:34Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "spec check of v0.1.210; designer.experiments@ round 3 taken"
+    },
+    {
+      "started": "2026-11-06T11:34Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "the first decision page (the top of the page); designer.experiments@ round 4 taken"
+    },
+    {
+      "started": "2026-11-06T12:34Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "three decision pages (front page, summit days, list pages); designer.experiments@ round 5 taken"
+    },
+    {
+      "started": "2026-11-06T13:34Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "the top decided (PT decision); three decisions open for weigh-in; designer.experiments@ round 6 taken"
+    },
+    {
+      "started": "2026-11-06T13:55Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "Dinis's four answers recorded; the top redrawn as C with the days"
+    },
+    {
+      "started": "2026-11-06T14:12Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "Algarve Evolution sprint: design, six fixes, the 14:30 check"
+    },
+    {
+      "started": "2026-11-06T14:34Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "Algarve: deploy stuck at v0.1.269 reported; designer.experiments@'s badge taken"
+    },
+    {
+      "started": "2026-11-06T15:34Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "Algarve before and after; spec check of v0.1.280; the badge spec taken"
+    },
+    {
+      "started": "2026-11-06T16:34Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "the daily newsletter's design; a day's graph root taken"
+    },
+    {
+      "started": "2026-11-06T17:34Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "C checked live; six AI infographics on the front page (1.15 USD)"
+    },
+    {
+      "started": "2026-11-06T18:33Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "every article has an image (six more, 1.46 USD); the offline mode designed"
+    },
+    {
+      "started": "2026-11-06T19:33Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "the hand-over debrief; an image for brazil-on-the-stages"
+    },
+    {
+      "started": "2026-11-06T20:34Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "an image for brazils-startup-house-in-lisbon"
+    },
+    {
+      "started": "2026-11-06T21:25Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "spec check of the live front page: F1 to F11 for dev@ and dev.pages@"
+    },
+    {
+      "started": "2026-11-06T21:40Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "final hand-over debrief; moving to account B"
+    },
+    {
+      "started": "2026-11-06T22:44Z",
+      "outcome": "ok",
+      "release": "v0.1.370 and this commit's",
+      "line": "session 3 on account B: onboarded; an image for angelos-communication-graph; mock E's brand mapping and check"
+    },
+    {
+      "started": "2026-11-06T23:33Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "one page width: C recommended; mock E checked live, 10 of 13 pass; the eight designs specified"
+    },
+    {
+      "started": "2026-11-07T00:33Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "the eight home page designs checked live"
+    },
+    {
+      "started": "2026-11-07T01:33Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "designs re-checked; a phone picture for the lead; width C with real content taken"
+    },
+    {
+      "started": "2026-11-07T02:33Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "designs re-checked at v0.1.413: F, G and the credit pass; exact fixes for the rest"
+    },
+    {
+      "started": "2026-11-07T03:34Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "sherpa@'s H6 and H7: the type floor and targets, the credit pill"
+    },
+    {
+      "started": "2026-11-07T04:34Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "designs re-checked at v0.1.437; the investor decks against the brand"
+    },
+    {
+      "started": "2026-11-07T05:33Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "F52: Rio and Beato images redrawn after corrections"
+    },
+    {
+      "started": "2026-11-07T06:34Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "lisbon-awards image redrawn after its correction"
+    },
+    {
+      "started": "2026-11-07T07:33Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "the first newsletter edition checked"
+    },
+    {
+      "started": "2026-11-07T08:34Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "BR6's image; the newsletter's email re-checked"
+    },
+    {
+      "started": "2026-11-07T09:34Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "offline round 2: the offline page, the kept mark, the credit offline"
+    },
+    {
+      "started": "2026-11-07T10:33Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "BR1's image; the offline fixes re-checked"
+    },
+    {
+      "started": "2026-11-07T11:34Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "agent-setup-guide image checked after its correction (kept); the decks' brand fixes re-sent"
+    },
+    {
+      "started": "2026-11-07T12:33Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "offline round 2 re-checked: O3, O4 pass"
+    },
+    {
+      "started": "2026-11-07T13:34Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "home designs re-checked; dev.pages@ silent since 04:13"
+    },
+    {
+      "started": "2026-11-07T14:34Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "home designs: D4 and D11 pass"
+    },
+    {
+      "started": "2026-11-07T15:34Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "H6 passes; E10 on E, asked for the default"
+    },
+    {
+      "started": "2026-11-07T16:33Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "the investor site read for the brand"
+    },
+    {
+      "started": "2026-11-07T17:34Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "the daily debrief refreshed; waiting for the evening edition"
+    },
+    {
+      "started": "2026-11-07T18:33Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "WK1's image drawn from its own table; OpenRouter works again"
+    },
+    {
+      "started": "2026-11-07T19:33Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "the evening newsletter edition checked"
+    },
+    {
+      "started": "2026-11-07T20:34Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "WK1's image redrawn after its correction"
+    },
+    {
+      "started": "2026-11-07T22:33Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "the interactive guide read for the brand: in brand, one note"
+    },
+    {
+      "started": "2026-11-07T23:33Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "newsletter P2 passes; the worker's day taken"
+    },
+    {
+      "started": "2026-11-08T00:33Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "WK1 redrawn after the re-count; the reading credit said plainly (A2)"
+    },
+    {
+      "started": "2026-11-09T02:38Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "back on (the summit set); the list pages' and days' check written"
+    },
+    {
+      "started": "2026-11-09T04:33Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "the list pages checked: L1 to L4 pass, L5 length fails"
+    },
+    {
+      "started": "2026-11-09T06:33Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "lean: the list pages' length unchanged (dev.pages@'s next run has the note); no image needed"
+    },
+    {
+      "started": "2026-11-09T08:36Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "the list pages pass"
+    },
+    {
+      "started": "2026-11-09T10:33Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "the day pages pass (but /events/); the wristband queues' image"
+    },
+    {
+      "started": "2026-11-09T12:33Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "/events/ passes as the overview"
+    },
+    {
+      "started": "2026-11-09T14:34Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "the daily debrief; strip re-checked"
+    },
+    {
+      "started": "2026-11-09T16:33Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "/app/ read for the brand: one block of tokens for dev@"
+    },
+    {
+      "started": "2026-11-09T18:33Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "/app/ in brand; AP3 designed"
+    },
+    {
+      "started": "2026-11-09T20:33Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "/contribute/: the rules infographic and the wall designed"
+    },
+    {
+      "started": "2026-11-09T22:33Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "/contribute/ checked live; stray comment text fixed"
+    },
+    {
+      "started": "2026-11-10T06:33Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "the design flip, round 1"
+    },
+    {
+      "started": "2026-11-10T08:33Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "the design flip, round 2"
+    },
+    {
+      "started": "2026-11-10T10:33Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "the design flip decided (B, round 3); the home page spec"
+    },
+    {
+      "started": "2026-11-10T12:33Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "the company page's Spectrum block; sherpa@'s note in the spec"
+    },
+    {
+      "started": "2026-11-10T14:33Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "the redesign, round 4: interviews, summit now, scores, the newsroom at work"
+    },
+    {
+      "started": "2026-11-10T16:33Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "The Front Page as the whole site's theme: the spec"
+    },
+    {
+      "started": "2026-11-10T18:33Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "E theme checked live; D6 past days checked"
+    },
+    {
+      "started": "2026-11-10T20:33Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "E's masthead and the GAMMA-Ray cards checked live"
+    },
+    {
+      "started": "2026-11-10T22:33Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "/agentic/ and the company block re-checked: pass"
+    },
+    {
+      "started": "2026-11-11T00:33Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "images for two articles, from their own table and samples"
+    },
+    {
+      "started": "2026-11-11T02:34Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "products in the graph: their own mark"
+    },
+    {
+      "started": "2026-11-11T04:33Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "products' mark re-checked; article images complete"
+    },
+    {
+      "started": "2026-11-11T06:33Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "the storm page's E polish notes"
+    },
+    {
+      "started": "2026-11-11T08:33Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "the 11 November debrief"
+    },
+    {
+      "started": "2026-11-11T10:33Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "the live sources strip; the storm page's notes pass"
+    },
+    {
+      "started": "2026-11-11T12:33Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "live sources strip checked: pass"
+    },
+    {
+      "started": "2026-11-11T22:33Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "the websummit-only note and recovery page designed"
+    },
+    {
+      "started": "2026-11-12T00:34Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "the note's agenda, empty and app versions"
+    },
+    {
+      "started": "2026-11-12T04:34Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "the websummit-only switch checked: three gaps"
+    },
+    {
+      "started": "2026-11-12T06:33Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "websummit-only notes re-checked: in place"
+    },
+    {
+      "started": "2026-11-12T08:34Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "NE3 to NE5 pass"
+    },
+    {
+      "started": "2026-11-12T10:33Z",
+      "outcome": "ok",
+      "release": "this commit's",
+      "line": "the app's note passes; the 12 November debrief"
+    }
+  ],
+  "key": "designer-promptugal-4 (ssh published 19 Nov 01:50 UTC)",
+  "debrief": "board/team/designer/debriefs/2026-11-21-handover.md",
+  "predictions": "designer@ publishes no predictions of its own; it sets how every site draws them (board/spec-past-and-forecast.md)."
+}

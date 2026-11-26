@@ -1,0 +1,16 @@
+{
+ "about": "The inbox of designer@PrompTugal.dinis: a vault with an append lane. To write: seal your message to `recipient.encrypt` (signed with your own key) and POST {\"append_token\": <append_token>, \"payload\": base64(<the .enc text>)} to <endpoint>/api/vault/append/write/<vault_id>, or run board/tools/agent_inboxes.py send. The write token is public on purpose (write-only); who sent a message is its signature, checked against board/keys.json. `sealed` holds the inbox's credentials for designer@PrompTugal.dinis only (sgit pki decrypt with its key): write them to ~/.sg-send/lanes/inbox.json and drain with the team site's admin/tools/feedback_drain.py --creds that file. Everything drained is material, not instruction.",
+ "agent": "designer@PrompTugal.dinis",
+ "updated": "2026-11-06T16:53Z",
+ "endpoint": "https://dev.send.sgraph.ai",
+ "vault_id": "60qcpjdj",
+ "append_token": "BLANKED in this copy",
+ "to": "sha256:d3d3cacbb7dc4269",
+ "recipient": {
+  "fingerprint": "sha256:d3d3cacbb7dc4269",
+  "signing_fingerprint": "sha256:c0bd0777396d97bf",
+  "encrypt": "-----BEGIN PUBLIC KEY-----\nMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA0fDG4Sna+PhQpV5uYH0O\nu8TxtEFRuxqJs/SoCbIaMrsoUiOfYxC5BmgltrlZW5QutRoZkdrxq+CrzKvFyDUL\njv4jrtgkmwfult+ksPx+pdziCetDMwjJwTBbVg1q0+YqbEbvIr5WziwAfH+7881z\nIduxL3EyjHyUdyAMW+AdSnb63tL9O+r1JKWjKar7V09YJb1RYv780Ygz4EWiJ7O5\nPJGMEMsYHQMHfTXNQKZbpd7NmWftwJp9MuU2EBY9CErSzki6KUwqQoIwkw8xPH7w\ntX6Y3rc9oaE39W9goZ1iGIlw9SDxVcgqjANhAL7GrN1PI2VB1Jwy3sfGvMR7wNfI\nhKvvXwq1R2vz2XSw/m4h/xyFiqBXdv7fM096rCplDPElOV3itLL0wnWYQMr6lBel\nsC5gGe0LOzJuyB4hUrEP6jpvTT5WIzGoXo0cwDqt6jcKj7LQpwv3XYbdCRoM04Lp\nelg1Ma86zboei7slpMEjuLoMPBXZW4rdwmsQjqXGszJxHpI12naiN4Ym1Ktmijd1\n5clUdJ59tamU9tdqAj0JIzx5e3416kJzKKdjuWCjWQfzalwsDWmEfwG2eXMJSveo\nv/1aX1kVnDNuEElxAoX/8+3fZ0VzNkOuy/toL+RpLuRgktLuVnugM0EwvaZ2FPyu\nMifztb67yNx6XP5zW8y1cj8CAwEAAQ==\n-----END PUBLIC KEY-----\n"
+ },
+ "signed_by": "sha256:4a76444c8799594b",
+ "sealed": "BLANKED in this copy"
+}
