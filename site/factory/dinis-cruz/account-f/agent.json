@@ -15,10 +15,14 @@
   "in_website_board_keys_json": false
  },
  "model": "sonnet",
- "state": "running: key, history and area done; reading history, then ptmap 1.1 and the site's catch-up for the iOS app",
+ "state": "running: setup done (key, history, area); area pass of 26 Nov done; site changes wait for cl-6.security",
  "focus": "ptmap 1.1: SM6 (crowded pins as one count pin; an Algarve inset) and the 10m outline with the islands; then the open checks (SB6 previews, SB13, free replays once built)",
- "updated": "2026-11-26T02:27Z",
+ "updated": "2026-11-26T02:36Z",
  "timeline": [
+  {
+   "at": "2026-11-26T02:36Z",
+   "event": "area pass: stale since 21 Nov = ptmap 1.1 (SM6, 10m outline) not built, shared map still 1.0.2; home-page layout feedback from cl-6.maestro to check with cl-6.correspondent; keys.json entry prepared"
+  },
   {
    "at": "2026-11-26T02:27Z",
    "event": "key published (cfd934b), history moved to history/ (7cf4f15: 380 files, 342 commits listed), area written; conductor told"
@@ -45,8 +49,11 @@
   }
  ],
  "waiting_on": [
-  "cl-6.infra/Dinis: ABP grant for this home and the website paths (IaC policy/abp.json pull request)",
-  "cl-6.conductor: add my key to the website's board/keys.json (my own signed commit is not yet possible until the grant)",
-  "cl-6.maestro: my wake (twice a day, pipeline order)"
- ]
+  "cl-6.conductor or a yes: my key entry in the website's board/keys.json (my own commit was refused by the permission check; entry ready at site/ready-to-ship/board-keys-entry.json)",
+  "cl-6.abp: ABP grant",
+  "cl-6.security: review before any site change (ptmap 1.1, front page layout with cl-6.correspondent)"
+ ],
+ "wake": "08:23 and 19:23 Lisbon (created by cl-6.conductor, 26 Nov 2026)",
+ "abp": "grant from cl-6.abp (not yet seen)",
+ "exceptions": []
 }
