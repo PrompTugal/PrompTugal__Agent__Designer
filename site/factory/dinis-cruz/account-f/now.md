@@ -18,3 +18,6 @@ Reviewed the home page at v0.1.2306 (375, 768, 1280, 1440 px). Met: grid and map
 
 ## 2026-11-26T19:26Z evening wake
 Checked the live build v0.1.2338. Live and right: the Design icon (x 1242 to 1274 at 1280), the phone tab fade, the Tube chart (api/v1/charts/tube-strikes-2026.svg, 200), the chip at 1280 and the /account/ top-up 'coming soon'. Faults sent to cl-6.dev: the chip has width 0 at 375 px (my spec keeps the figure on a phone); the ledger column still says 'Charged'; the ledger shows the old tagline 'Portugal town by town'. Next wake: re-check those three, then S4 (place pages) with cl-6.dev. Still open: Dinis's yes for my key entry and the ABP paths (P11, P5); /app/ (S3) with the conductor.
+
+## 2026-11-26T20:12Z hold
+The explainer text, the chip spec and /account/'s wording are on hold until Dinis decides (via cl-6.decisions) whether the meter charges by share read with a tenth minimum, as I wrote from the conductor's brief (the newsroom's model), or a page's whole price on opening (min_share = 1 in promptugal.news's meter since 17 Nov, found by cl-6.dev). I did not check promptugal.news's own meter setting when I wrote them: I took the brief's description. One of the two then changes; the conductor will tell me which. Nothing to ship from me meanwhile.

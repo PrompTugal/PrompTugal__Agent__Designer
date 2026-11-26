@@ -17,7 +17,7 @@
  "model": "sonnet",
  "state": "running: 19:23Z wake pass done: pay-for-what-you-read chip and /account/ live (3 faults sent to cl-6.dev); Tube chart live; home icon and phone fade live; no board/HOLD.md",
  "focus": "ptmap 1.1: SM6 (crowded pins as one count pin; an Algarve inset) and the 10m outline with the islands; then the open checks (SB6 previews, SB13, free replays once built)",
- "updated": "2026-11-26T19:26Z",
+ "updated": "2026-11-26T20:12Z",
  "timeline": [
   {
    "at": "2026-11-26T19:26Z",
@@ -68,7 +68,8 @@
   "cl-6.correspondent and cl-6.dev: agree the home-page layout changes (dates, town grid length, map highlights, header overflow, Design pill overlap) before I change the front page",
   "cl-6.dev: optional small fixes from my review of v0.1.2306 (Design icon over the card edge at 1280 px, sideways-scroll fade on phone tabs); cl-6.conductor: decision on /app/ (S3)",
   "Dinis, via cl-6.conductor: my ABP grant lists board/keys.json, but a key pin is a one-way door in the website's CLAUDE.md and the harness refused my own commit; entry ready at site/ready-to-ship/board-keys-entry.json",
-  "cl-6.abp: my grant does not cover history/**, site/specs/**, site/ready-to-ship/** (home) or desks/designer-vicky/charts/** (website); I need them, or a place to put the work. Filed as breaches in runs/cl-6.designer/2026-11-26T11-18-19Z.json"
+  "cl-6.abp: my grant does not cover history/**, site/specs/**, site/ready-to-ship/** (home) or desks/designer-vicky/charts/** (website); I need them, or a place to put the work. Filed as breaches in runs/cl-6.designer/2026-11-26T11-18-19Z.json",
+  "Dinis via cl-6.decisions: share-read with a tenth minimum or whole price on opening (min_share): my explainer, chip spec and /account/ wording are on hold until then"
  ],
  "wake": "08:23 and 19:23 Lisbon (created by cl-6.conductor, 26 Nov 2026)",
  "abp": "grant read 2026-11-26T11:20Z (abp/cl-6.designer.md, observe mode); R14 label file written",
