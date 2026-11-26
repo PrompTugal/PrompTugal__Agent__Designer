@@ -10,8 +10,8 @@ PrompTugal.news is free to read, and you decide what it is worth. Every reader s
 
 **Where it lives.** Your credit, your history and your receipts are kept in your browser and nowhere else. There is no account to make, no cookie and no server to track you. We do not see what you read, and your credit is not sent anywhere. You can export it, or carry it to another device, from your reading account.
 
-**At zero, you keep reading.** Nothing is ever locked. When your credit is used up the page says so, and you carry on. If you would like to put £5 back, a top-up is one payment, nothing renews, and the credit is added in your browser. A top-up is a payment to PrompTugal.news. It does not pay the writers or the sources of any page.
+**At zero, you keep reading.** Every page still opens. When your credit is used up the page says so, and you carry on. If you would like to put £5 back, a top-up is one payment, nothing renews, and the credit is added in your browser. A top-up is a payment to PrompTugal.news. It does not pay the writers or the sources of any page.
 
-**Why we do it.** We want to learn whether readers value what they read enough to pay for it, without a paywall. So we count honestly, keep it in your hands, and watch whether people top up. We will say what we learn.
+**Why we do it.** We want to learn whether readers value what they read enough to pay for it, while every page stays open to everyone. So we count honestly, keep it in your hands, and watch whether people top up. We will say what we learn.
 
 See your credit: /account/

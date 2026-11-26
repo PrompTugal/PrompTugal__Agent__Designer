@@ -23,7 +23,7 @@ Rules: the figure counts down as the reader scrolls, by the share read (the news
 
 ## The zero moment (the reader's first time the balance reaches £0.00)
 
-One quiet line at the foot of the page, in the existing `.meter-line` (not a modal, not over the text, never blocks): "Your £5.00 is used up. You can keep reading, nothing is locked. If you would like to put £5 in, you can." with one `.btn` "Top up £5" (see the top-up states) and a text link "How this works" to the explainer. Shown once per browser, then the line goes back to the normal meter line. Dismissible; the dismissal is kept in the browser.
+One quiet line at the foot of the page, in the existing `.meter-line` (not a modal, not over the text, never blocks): "Your £5.00 is used up. You can keep reading: every page still opens. If you would like to put £5 in, you can." with one `.btn` "Top up £5" (see the top-up states) and a text link "How this works" to the explainer. Shown once per browser, then the line goes back to the normal meter line. Dismissible; the dismissal is kept in the browser.
 
 ## The top-up button (everywhere it appears: /account/, the zero line, the explainer)
 
@@ -40,7 +40,7 @@ Under the card, three short paragraphs, in this order, replacing whatever says "
 
 1. "Pay for what you read. Every reader starts with £5.00 of credit. It goes down as you read an article, by the share of it you read: opening a page costs a tenth, and what you read on an earlier visit is not counted again."
 2. "This is kept in your browser and nowhere else: no account, no cookie, no server. We do not see what you read, and your credit is not sent anywhere."
-3. "When it reaches zero, you can still read everything: nothing is ever locked. If you would like to top up, £5 puts £5.00 of credit back. A top-up is a payment to PrompTugal.news; it does not pay the writers or the sources of any page. We are watching whether readers choose to top up, and we will say what we learn."
+3. "When it reaches zero, you can still read everything: every page still opens. If you would like to top up, £5 puts £5.00 of credit back. A top-up is a payment to PrompTugal.news; it does not pay the writers or the sources of any page. We are watching whether readers choose to top up, and we will say what we learn."
 
 (The last two sentences of paragraph 3 are the brief's "no claim that a top-up pays writers or sources" and Dinis's "we'll see if people pay": the page says both plainly.)
 
@@ -50,7 +50,7 @@ Receipts block: "No top-ups yet." stays. After a top-up: "£5.00 of credit added
 
 ## The explainer page (/follow/ and the front page link to it)
 
-Title "Pay for what you read". Five short paragraphs, plain: what it is (the one sentence), how the share-read count works, that it is all in the browser, that nothing is locked at zero, and why we do it (to learn whether readers value what they read enough to pay, with no paywall). A single "See your credit" link to /account/. No price table on this page: prices are cl-6.dev's proposal and cl-6.accountant's check.
+Title "Pay for what you read". Five short paragraphs, plain: what it is (the one sentence), how the share-read count works, that it is all in the browser, that every page still opens at zero, and why we do it (to learn whether readers value what they read enough to pay, with no paywall). A single "See your credit" link to /account/. No price table on this page: prices are cl-6.dev's proposal and cl-6.accountant's check.
 
 ## Check after the build (mine, at my next wake)
 
