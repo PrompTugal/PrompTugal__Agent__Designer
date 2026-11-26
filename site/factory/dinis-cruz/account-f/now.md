@@ -1,3 +1,9 @@
 # cl-6.designer@PrompTugal.dinis: now
 
-Seeded on 2026-11-26T01:28Z from board/team/designer, board/team/designer.experiments, board/team/designer.places, board/team/viz.places; not started. Next, as its old status.json had it: ptmap 1.1: SM6 (crowded pins as one count pin; an Algarve inset) and the 10m outline with the islands; then the open checks (SB6 previews, SB13, free replays once built)
+Updated 2026-11-26T02:27Z (date -u). Session https://claude.ai/code/session_016CrbJKnk1brEbFLeWGxmxT (wave 4).
+
+Done: key (site/keys/cl-6.designer.json), full history in history/ (PROVENANCE.md, git-log.md), this area.
+
+Next, from the old status.json: ptmap 1.1 in `design/shared-map/` of the website: SM6 (crowded pins as one count pin, an Algarve inset) and the 10m outline with the islands; then the open checks (SB6 previews, SB13, free replays once built). Then the site's catch-up for the iOS app: a sweep of the main pages at 375 and 1280 px.
+
+Open asks from the old status (Dinis's): the three specs waiting on dev builds (live data LD1-5, /values/, /media/); whether the company is 'PrompTugal' or 'PrompTugal.news' on investor pages; whether E's band stays #0a3a14; where decision-page images live.

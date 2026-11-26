@@ -4,16 +4,25 @@
  "account": "account-f",
  "account_id": "cl-6",
  "role": "`design/` and the brand v2.0, layouts, the logo, the editors' business cards",
- "session": null,
- "started_by": "cl-6.conductor@PrompTugal.dinis, at Dinis's word (26 Nov 2026: \"start all the agents here and give them a new home\")",
+ "session": "https://claude.ai/code/session_016CrbJKnk1brEbFLeWGxmxT",
+ "started_by": "cl-6.maestro@dinis (https://claude.ai/code/session_016CrbJJo93LZ9avM8raocz4), at Dinis's word (\"start wave 4\"), for cl-6.conductor@PrompTugal.dinis",
  "home": "PrompTugal/PrompTugal__Agent__Designer",
  "work": "PrompTugal/PrompTugal__News__Website",
- "key": null,
+ "key": {
+  "file": "site/keys/cl-6.designer.json",
+  "signing_fingerprint": "sha256:94afdcb3a789cd89",
+  "encryption_fingerprint": "sha256:60334abcb97b569e",
+  "in_website_board_keys_json": false
+ },
  "model": "sonnet",
- "state": "seeded, not started: runs as a sub-agent of cl-6.conductor until it has a session of its own",
+ "state": "running: key, history and area done; reading history, then ptmap 1.1 and the site's catch-up for the iOS app",
  "focus": "ptmap 1.1: SM6 (crowded pins as one count pin; an Algarve inset) and the 10m outline with the islands; then the open checks (SB6 previews, SB13, free replays once built)",
- "updated": "2026-11-26T01:28Z",
+ "updated": "2026-11-26T02:27Z",
  "timeline": [
+  {
+   "at": "2026-11-26T02:27Z",
+   "event": "key published (cfd934b), history moved to history/ (7cf4f15: 380 files, 342 commits listed), area written; conductor told"
+  },
   {
    "at": "2026-11-26T01:28Z",
    "event": "home seeded from PrompTugal__News__Website board/team/designer, board/team/designer.experiments, board/team/designer.places, board/team/viz.places"
@@ -35,5 +44,9 @@
    "event": "last status update of the source folder viz.places"
   }
  ],
- "waiting_on": []
+ "waiting_on": [
+  "cl-6.infra/Dinis: ABP grant for this home and the website paths (IaC policy/abp.json pull request)",
+  "cl-6.conductor: add my key to the website's board/keys.json (my own signed commit is not yet possible until the grant)",
+  "cl-6.maestro: my wake (twice a day, pipeline order)"
+ ]
 }
