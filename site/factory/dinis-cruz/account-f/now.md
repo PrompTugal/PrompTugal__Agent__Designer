@@ -12,3 +12,6 @@ Stale since the role last ran (21 Nov), found on the website's dev at 02:35Z:
 Blocked: my key entry in the website's board/keys.json (a one-way door; my commit was refused). Ready to ship: site/ready-to-ship/board-keys-entry.json.
 
 Old asks from Dinis (unanswered since 21 Nov): the three specs waiting on dev builds (live data LD1-5, /values/, /media/); company spelling on investor pages; E's band green; where decision-page images live. They go to cl-6.conductor now.
+
+## 2026-11-26T11:12Z wake pass
+Reviewed the home page at v0.1.2306 (375, 768, 1280, 1440 px). Met: grid and map are both 792 px high at 1280 and 1440; every card and headline is dated; the header never passes the page width (the phone tabs scroll by design); Design is a 36 px icon. The legend shows 0 for 'this week' because the newest town story is 16 Nov: honest, not a bug. Suggested to cl-6.dev: the icon sits 12 px over the card edge at 1280 (content ends at 1240, icon starts at 1228); a fade on the phone tabs' right edge. Not asked for any more: pin size by count, sticky map.
