@@ -1,0 +1,20 @@
+{
+ "agent": "cl-6.designer@PrompTugal.dinis",
+ "name": "cl-6.designer",
+ "role": "PrompTugal.news's designer: design/ and the brand v2.0, layouts, the logo, the editors' business cards (Dinis Cruz's Claude account 6, account F)",
+ "session": "https://claude.ai/code/session_016CrbJKnk1brEbFLeWGxmxT",
+ "encryption_fingerprint": "sha256:60334abcb97b569e",
+ "signing_fingerprint": "sha256:94afdcb3a789cd89",
+ "ssh": "ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBH3bP7vCqNYwUTTGoSynCuHNKziOi714SHx9W7nIIkgvojVoJJPKCEDSmmwsZX7nXguxxDtIJemE9nIHjEVSoJQ=",
+ "bundle": {
+  "v": 1,
+  "encrypt": "-----BEGIN PUBLIC KEY-----\nMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAzBE0kw6TXwigkIVcqkIq\nDDi8COBRn4XyaOEn15pajWrh96sXY0jky21GhYli+qdC4aofbn75JeN46Sg5IVWn\njtXhmQuCvS+EVQYOovHM2Engfe0eqLe6iry8wukr0Cw+8E3nnqBqkGK/p/eLMInd\nTV/HPzk3m6W1oebTQBpKJFLk/DPWaS2Z2LwH9nm7lMSEoD/V36Okgem+FvPKG9j/\n72TaHWxLgxUXqjIADpjdle+3IGFtIjVcxk8ij1Q6s2Z3GOIKfReQ58wz5LmmZvvS\njOAP0hGMujA3pcbgyT9kxnqKU/0ZNrCShx1afCuz/Xf0ifxSw/aD8soyTVKqWY2n\nlpoLqB/7Whp6CRMuiSe6cNv5GXRENx+ytEG9eFHJVRiN0u7Sy6B4hpNHx5oQGtCn\nS21L7URuIFS2iyiHicID8FvfzuvYwDfQcMJDGHmCAimMLotWkCDpiuE5ZdpXKQLB\nyRQVZ8yn598z/jtBGbYmYAdWSMV8fixTej7jbenqWoPqjHVRdZBf8WLdJ1xfbwDl\nC9izfYyxuVdpi8O12p3kb75CcrWYWN4shW+s3Jfm3azdS9qoSf+G78F7x0I4mz07\n1e0hemUz1L6s7153GjCnBNupqFOzRe3KQGH0Z6CLyrXuoAQn/+0vJNgX0++hIyoa\ngoOMw9ej31nXWfAEHVekp1ECAwEAAQ==\n-----END PUBLIC KEY-----\n",
+  "sign": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEfds/u8Ko1jBRNMahLKcK4c0rOI6L\nvXhIfH1bucgiSC+iNWgkk8oIQNKabCxlfudeC7HEO0gl6YT2cgeMRVKglA==\n-----END PUBLIC KEY-----\n",
+  "label": "cl-6.designer-account-f",
+  "fingerprint": "sha256:60334abcb97b569e",
+  "signing_fingerprint": "sha256:94afdcb3a789cd89"
+ },
+ "first_published": "this repository, site/keys/cl-6.designer.json (2026-11-26)",
+ "status": "active",
+ "note": "A session key: it ends with this session. The private half never leaves the session. Made with openssl (P-256 signing, RSA-4096 encryption)."
+}
