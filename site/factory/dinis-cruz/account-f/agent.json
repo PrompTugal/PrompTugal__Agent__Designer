@@ -15,10 +15,14 @@
   "in_website_board_keys_json": false
  },
  "model": "sonnet",
- "state": "running: 27 Nov 08:24Z wake pass done: home page live as specified (v0.1.2378); S4 place-page layout sent; tree view sketched; waiting on Dinis's answers and on content owners for the tagline",
+ "state": "running: 27 Nov 19:24Z wake pass done: S4 live (Faro 15.8 screens); N3 closed; open: tagline (content owner), /app/ (conductor), meter answer (Dinis)",
  "focus": "ptmap 1.1: SM6 (crowded pins as one count pin; an Algarve inset) and the 10m outline with the islands; then the open checks (SB6 previews, SB13, free replays once built)",
- "updated": "2026-11-27T08:27Z",
+ "updated": "2026-11-27T19:26Z",
  "timeline": [
+  {
+   "at": "2026-11-27T19:26Z",
+   "event": "evening wake: live v0.1.2401 checked; S4 live; reported open items to cl-6.conductor; run report filed with hosts read"
+  },
   {
    "at": "2026-11-27T08:27Z",
    "event": "morning wake: live build checked; place pages on a phone spec (43.6 screens measured); tagline 'Portugal town by town' still on the home page and /account/ (S9, content owner); run report filed"
@@ -76,6 +80,6 @@
   "Dinis via cl-6.decisions: share-read with a tenth minimum or whole price on opening (min_share): my explainer, chip spec and /account/ wording are on hold until then"
  ],
  "wake": "08:23 and 19:23 Lisbon (created by cl-6.conductor, 26 Nov 2026)",
- "abp": "grant read 2026-11-26T11:20Z (abp/cl-6.designer.md, observe mode); R14 label file written",
+ "abp": "grant read 2026-11-27T19:24Z (policy v1.7.13, observe mode; network: github.com only, list hosts read in the run report); R14 label written",
  "exceptions": []
 }
