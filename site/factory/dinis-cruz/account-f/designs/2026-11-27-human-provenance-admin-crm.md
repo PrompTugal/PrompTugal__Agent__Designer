@@ -74,14 +74,14 @@ Look: the existing brand, the same type and tokens as /newsroom/, dates in the m
 Article byline block:
 ```
 Title
-Edited by Maria Santos · 26 Nov      agent-written · signed
+Edited by [Name] · 26 Nov      agent-written · signed
 Reviewed by 2 people (Check)         [ I have read this and I agree ]
 ```
 /admin/ Today (phone):
 ```
 Today
 Needs you (3)    > Gmail: read or send?
-                 > Name Maria Santos as editor?
+                 > Name [Name] as editor?
                  > Draft to a source, waiting
 Since 26 Nov     > 4 reviews signed  > 7 feedback messages
 [ Today | Stories | People | Inbox ]
