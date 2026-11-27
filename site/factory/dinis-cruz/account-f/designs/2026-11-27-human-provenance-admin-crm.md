@@ -138,7 +138,7 @@ Record (canonical JSON: keys sorted, UTF-8, no spaces; signed bytes are `"prompt
 
 ### 10.3 What the browser needs from /login/
 
-Signing a review uses the person's own key, made on their own device. The browser signs with `crypto.subtle.sign`, prefixes nothing it was not given, and shows the person the exact record before signing. **/login/ must change first:** drop the IndexedDB and localStorage key storage; unwrap the key per visit from a file the person picks, or a passkey with WebAuthn PRF, and hold it in a non-extractable `CryptoKey` in memory only. The 2 keys already issued are unaffected. Browser support for PRF is uneven, so the file route is the baseline and PRF an addition. That is roughly a day of work and a security review; it blocks 10.2's signing and 10.5.
+Signing a review uses the person's own key, made on their own device. The browser signs with `crypto.subtle.sign`, prefixes nothing it was not given, and shows the person the exact record before signing. **/login/ must change first:** drop the IndexedDB and localStorage key storage; unwrap the key per visit from a file the person picks, or a passkey with WebAuthn PRF, and hold it in a non-extractable `CryptoKey` in memory only. **Amended by cl-6.security's review (see 10.7): the 2 keys already issued are not unaffected**; they were made by an issuing tool that kept the private half, so they are replaced, not kept. Browser support for PRF is uneven, so the file route is the baseline and PRF an addition. That is roughly a day of work and a security review; it blocks 10.2's signing and 10.5.
 
 ### 10.4 The feedback lane (same pattern as signups, three changes)
 
@@ -170,10 +170,27 @@ A built page `/admin/` (a new feature `admin.mjs`; the page and its one script a
 
 Needs from others, not mine to decide: the anchor key and each enrolment (Dinis); who records and who drains (Dinis, with cl-6.abp for the grants); rate limiting (cl-6.infra); consent and the data-protection view (Dinis, cl-6.counsel); the CRM and Gmail (Dinis). Every step goes through cl-6.security before it is live.
 
+### 10.7 Amendments from cl-6.security's whole review of revision 3 (27 Nov 2026, 01:13 UTC)
+
+Review: https://github.com/PrompTugal/PrompTugal__Agent__Security/blob/dev/docs/security/reviews/2026-11-27-human-provenance-design-r3.md (1c65fd1). Verdict: sound to build in the order of 10.6, on these changes. They bind the step each one touches; none is optional where marked "required".
+
+Required before the step they touch goes live:
+1. **The two existing keys are replaced.** They were made by `person-key.mjs`, whose issuing agent keeps the private half (security finding S17, medium, live). Dinis makes a new key in his own browser; the anchor key enrols it; the old two are revoked; `person-key.mjs` is retired. **Until then, nothing new that only Dinis should read is sealed to the current key.** (This replaces the sentence in 10.3 that said the 2 keys were unaffected.)
+2. **/admin/ seals only to person-made keys** enrolled in `people-enrolments.json` (10.5), never to the keys in `board/person-keys.json` that an agent issued.
+3. **The anchor is stated by Dinis, not only self-signed.** The first anchor entry is signed by itself (finding S13). Dinis must state the anchor key's fingerprint in his own words (a decisions record or his own session), and the gate checks the first entry against it.
+4. **Revocation is judged by receipt, not by the signer's clock.** Order is the commit or receipt order, never the signer's own "at"; the gate refuses an "at" later than its commit (10.2).
+
+Recommended:
+5. The service-side rate limit for the public append token (10.4a), for the signups lane too.
+6. A reviewer's key fingerprint is linkable, pseudonymous personal data: the consent text a reviewer sees, and cl-6.counsel's view, must cover it.
+7. Wording: IndexedDB holds the private key today; localStorage holds only the person id (10 intro and 10.3 should say so).
+
+Everything else in this document is confirmed as designed by cl-6.security.
+
 ## 11. Threat model (cl-6.security)
 
 Unchanged, in cl-6.security's home: https://github.com/PrompTugal/PrompTugal__Agent__Security/blob/dev/docs/security/design/2026-11-27-human-provenance-threat-model.md (b8f397f). Its headline points are folded into sections 0 to 6 above. cl-6.security will review this document whole when section 10 is in.
 
 ## 12. What this design does not claim
 
-Revision 3. Sections 10 and 11 are now written (cl-6.dev's text is pasted unchanged; cl-6.security's is linked). Not final until cl-6.security has reviewed the whole document, and Dinis has answered the questions in section 9. Nothing is built.
+Revision 4 (cl-6.security's amendments are in 10.7). Sections 10 and 11 are written (cl-6.dev's text is pasted unchanged; cl-6.security's is linked). Not final until cl-6.security has reviewed the whole document, and Dinis has answered the questions in section 9. Nothing is built.
