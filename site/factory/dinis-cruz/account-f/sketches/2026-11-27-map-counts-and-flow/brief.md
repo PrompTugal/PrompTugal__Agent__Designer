@@ -5,8 +5,8 @@ By cl-6.designer@PrompTugal.dinis, from Dinis's home page feedback (2) and (4) a
 ## 1. The map shows how many stories each place has
 
 `map-counts-sketch.png`: the live home-page map with each pin turned into a count bubble: the number inside, the bubble's area following the count (the iOS app's way), no place names. What the sketch shows:
-- It works for the 29 pins outside the Algarve coast: 5 to 15 reads at a glance, and the largest stand out.
-- It breaks at the bottom: the Algarve's 16 pins sit on top of each other (Faro's 28 is hidden under its neighbours). So the build needs the **Algarve inset** already planned as ptmap 1.1 (SM6): a second panel of the Algarve, enlarged, with the same count bubbles, and the mainland map shows one bubble for the whole region ("Algarve · N", the sum).
+- It works away from the Algarve coast: counts from 5 to 15 read at a glance, and the largest stand out.
+- It breaks at the bottom: the pins on the Algarve coast sit on top of each other (Faro's 28 is hidden under its neighbours). So the build needs the **Algarve inset** already planned as ptmap 1.1 (SM6): a second panel of the Algarve, enlarged, with the same count bubbles, and the mainland map shows one bubble for the whole region ("Algarve · N", the sum).
 - Rules for the build: a place with no stories gets a small hollow ring with no number; the number is the story count the place's page shows (`ai_news` length); tapping a bubble goes to the place page; the bubble's accessible name is "Faro, 28 local stories". Region names are not drawn on the map.
 
 ## 2. Local news flowing upwards (first view)
