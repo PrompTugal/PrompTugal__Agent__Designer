@@ -15,10 +15,14 @@
   "in_website_board_keys_json": false
  },
  "model": "sonnet",
- "state": "running: 19:23Z wake pass done: pay-for-what-you-read chip and /account/ live (3 faults sent to cl-6.dev); Tube chart live; home icon and phone fade live; no board/HOLD.md",
+ "state": "running: 27 Nov 08:24Z wake pass done: home page live as specified (v0.1.2378); S4 place-page layout sent; tree view sketched; waiting on Dinis's answers and on content owners for the tagline",
  "focus": "ptmap 1.1: SM6 (crowded pins as one count pin; an Algarve inset) and the 10m outline with the islands; then the open checks (SB6 previews, SB13, free replays once built)",
- "updated": "2026-11-26T20:12Z",
+ "updated": "2026-11-27T08:27Z",
  "timeline": [
+  {
+   "at": "2026-11-27T08:27Z",
+   "event": "morning wake: live build checked; place pages on a phone spec (43.6 screens measured); tagline 'Portugal town by town' still on the home page and /account/ (S9, content owner); run report filed"
+  },
   {
    "at": "2026-11-26T19:26Z",
    "event": "evening wake: checked v0.1.2338 at 375 and 1280 px; chip invisible on phones, 'Charged' heading on /account/, old tagline in the ledger: sent to cl-6.dev"
