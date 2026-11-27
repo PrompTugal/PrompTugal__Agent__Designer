@@ -36,6 +36,6 @@ Files: `map-counts-sketch-v2.png`, `flow-sketch-v2.png` and `.svg`. Folded in, p
 2. **Freshness:** both dates on the map and the flow: "Newest story 17 Nov; checked 26 Nov". (The 26 Nov check date is the latest I know of; the build should print its own build date.)
 3. **Flow:** a plain headline sentence ("Of 299 local stories, 11 are also filed at a higher level."), a count axis on each row, and arrows rising from Local to Regional to National.
 4. **Meeting of the levels:** said on the chart: small today because each story is filed under one place only; tagging each story with its town, region and country will show more.
-5. **Unplaced stories counted, not dropped:** a line on the chart: 77 of 107 articles not yet placed (the ontologist's count of 27 Nov; I did not recount). The place-file stories are all dated.
+5. **Unplaced stories counted, not dropped:** a line on the chart: 99 of 117 articles not yet placed (the ontologist's file totals of 27 Nov: 117 articles, 18 placed; their first message said 77 of 107 and they corrected it; I did not recount). The place-file stories are all dated.
 A correction to my own first version: 317 rows, 299 distinct, and 17 stories sit under two or more places (one under three), which is 18 extra rows, not "18 stories under two places".
 Build order as the reviewer gives it: data roll-up and tagging, then the map, then the tree, then the per-day flow, and 3D last, only if the others do not show where the levels meet. I agree.
