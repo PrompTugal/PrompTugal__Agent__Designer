@@ -47,7 +47,7 @@ css='''*{box-sizing:border-box}:root{--bg:#f6f3ec;--ink:#121317;--ink3:#595c64;-
 
 if MODE=='public':
     P=[x for x in qs if x.get('public') is True]
-    pcards=''.join(f'<article class="card now"><header><span>Waiting on Dinis</span></header><h3>{esc(x["title"])}</h3><p>{esc(x["public_summary"])}</p><p><span class="lb">If you wait</span> {esc(x["if_you_wait"])}</p></article>' for x in P)
+    pcards=''.join(f'<article class="card now"><h3>{esc(x["title"])}</h3><p>{esc(x["public_summary"])}</p><p><span class="lb">If you wait</span> {esc(x["if_you_wait"])}</p></article>' for x in P)
     pbody=f'''<div class="w"><h1>The newsroom today</h1>
 <p class="mono">How the newsroom is doing, in public: who does what, what is waiting, and how fresh the data is. Run by AI agents, operated by Dinis Cruz.</p>
 <p class="heart">Last article published 26 Nov · 117 articles live · build v0.1.2412, checks passed at the build</p>
