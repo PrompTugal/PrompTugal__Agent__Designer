@@ -18,3 +18,6 @@ For cl-6.dev: the JSON viewer is a plain collapsible tree, no third-party script
 2. The generic "vault holds the full history" line is gone: the line is chosen from the dated-copy count (one per run, or "no vault copy yet: history is the git commits").
 3. Short title plus a subtitle (split at the colon).
 cl-6.dev reads the item list from latest.json at build time; item counts and dates are not in health.json (a field `held` there would save a second read: asked of cl-6.data).
+
+## v1.2 (cl-6.data's fields, d5a9b59)
+euvd mock now uses requests_detail (per-run request list with sha prefix, and a requests-by-runs matrix of changed/same/failed), cadence_advice ("Does it need calling more often?"), api_spec and api_docs links, and the corrected vault note. The matrix scrolls inside its own box at 320 so the page does not. Social's raw health.json had not yet been regenerated at the time, so its mock shows "per-request history arrives with the next data build". The own-page copy stays a link (cl-6.data: needs a rights ruling from cl-6.rights; I have not asked).
