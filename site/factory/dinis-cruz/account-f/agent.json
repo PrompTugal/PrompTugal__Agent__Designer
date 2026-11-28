@@ -15,9 +15,9 @@
   "in_website_board_keys_json": false
  },
  "model": "sonnet",
- "state": "running: 27 Nov 19:24Z wake pass done: S4 live (Faro 15.8 screens); N3 closed; open: tagline (content owner), /app/ (conductor), meter answer (Dinis)",
+ "state": "running: 28 Nov 08:24Z wake pass done: data source pages v1.2 (euvd, social) with cl-6.dev and cl-6.maestro; status public mode last round specified (0e0eb94); open: tagline (content owner), /app/ (conductor), meter answer (Dinis)",
  "focus": "ptmap 1.1: SM6 (crowded pins as one count pin; an Algarve inset) and the 10m outline with the islands; then the open checks (SB6 previews, SB13, free replays once built)",
- "updated": "2026-11-27T19:26Z",
+ "updated": "2026-11-28T08:24:32Z",
  "timeline": [
   {
    "at": "2026-11-27T19:26Z",
@@ -70,6 +70,10 @@
   {
    "at": "2026-11-16T15:24Z",
    "event": "last status update of the source folder viz.places"
+  },
+  {
+   "at": "2026-11-28T08:24:32Z",
+   "what": "28 Nov wake: source pages v1 to v1.2 sent to maestro, dev, data; synthetic scores v0.1.2414 and v0.1.2417 recorded; last round on status page specified."
   }
  ],
  "waiting_on": [
