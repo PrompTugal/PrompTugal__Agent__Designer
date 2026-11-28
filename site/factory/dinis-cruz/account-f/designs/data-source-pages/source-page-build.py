@@ -77,11 +77,14 @@ def held():
     ds=sorted(i[dk] for i in items if i.get(dk))
     days={}
     for d in ds: days[d[:10]]=days.get(d[:10],0)+1
+    hd=H.get('held')
+    if hd and hd.get('per_day'): days={x['date']:x['count'] for x in hd['per_day']}
+    n_items=hd['items'] if hd else len(items); noun=(hd['noun'] if hd else noun)
     mx=max(days.values()); bars=''.join(f'<div class="hb" title="{k}: {v}"><i style="height:{max(3,v/mx*100):.0f}%"></i></div>' for k,v in sorted(days.items()))
     new=sorted(items,key=lambda i:i.get(dk,''),reverse=True)[:5]
     lst=''.join(f'<li><b>{esc(lab(i)[0])}</b> <span class="mono">{esc(lab(i)[1])} · {esc(i[dk][:16].replace("T"," "))} UTC</span></li>' for i in new)
     d0=ds[0][:10]; d1=ds[-1][:10]
-    return f'<div class="fig big"><b>{len(items)}</b>{noun} held, {esc(d0)} to {esc(d1)}<div class="hist" aria-label="Items per day">{bars}</div><p class="mono">Items per day, oldest to newest ({len(days)} days).</p></div><h3>Newest five</h3><ul class="runs">{lst}</ul>'
+    return f'<div class="fig big"><b>{n_items}</b>{noun} held, {esc(hd['earliest'] if hd and hd.get('earliest') else d0)} to {esc(hd['latest'] if hd and hd.get('latest') else d1)}<div class="hist" aria-label="Items per day">{bars}</div><p class="mono">Items per day, oldest to newest ({len(days)} days).</p></div><h3>Newest five</h3><ul class="runs">{lst}</ul>'
 vaultline=('The vault keeps one dated copy per run: history is held there.' if cp['dated_copies_in_vault'] else 'No vault copy yet: the only history is the git commits below.')
 title,_,subtitle=H['title'].partition(': ')
 if not subtitle: title,subtitle=H['title'],''
