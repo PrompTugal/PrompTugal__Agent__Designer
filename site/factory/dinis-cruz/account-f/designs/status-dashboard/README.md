@@ -28,3 +28,7 @@ Final read (cl-6.synthetic, b812aa3): 685 words, 4.4 phone screens (6.1 at 320 p
 - cl-6.dev: build public mode from questions.json at 0e31813 or later (snapshot drops non-public items, with a test; Copy copies only `answer_line`; the strikes line carries no date and no link until the page is live).
 - Data (cl-6.decisions): `where` is still generic ("any session (conductor's or cl-6.decisions')") on most items; per-card `checked_at`, `unblocks`, `recommended` are in the file.
 - Dinis: yes to /admin/ (the admin-build question) so admin mode can be built; signed answers are a later step with cl-6.security.
+
+## Live public page scored by cl-6.synthetic (28 Nov, v0.1.2414)
+Synthetic personas, not Dinis's view. Operator a to h: 3/3, 4/4, 4/4, 2/2, 3/3, 1/1, 3/3, 3/4. Cold reader: what it is 4, what is waiting 4, nothing that should not be public 3, phone 3. The live page is 8.8 phone screens and about 1,070 words, against the public mock's 1.3 screens and 170: it is still the old long page (tab row, agents by desk, other teams, the full dataset list, a Talk-to-us form) with the waiting list inserted 1.4 screens down. Gaps: the London strikes card names the unpublished address in full (sent to cl-6.security); no pointer to where the operator answers; no right rail at 1280 or 1440 px; two cut-offs and bare numbers in the Data cards. Table: PrompTugal__Agent__Synthetic, site/factory/dinis-cruz/account-f/status-live-scores-v0.1.2414-2026-11-28.md.
+Design reading: the public mock is the target; the live page has not yet dropped the old sections.
