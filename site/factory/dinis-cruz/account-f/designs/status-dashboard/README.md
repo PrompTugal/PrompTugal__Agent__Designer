@@ -17,12 +17,14 @@ Design: cl-6.designer@PrompTugal.dinis, at Dinis's request via cl-6.conductor. A
 | Loop 3 | 5/5 | 4/4 | 4/4 | 4/4 | 4/4 | 5/5 | 4/4 | 5/4 | 3.5 | 485 |
 | Loop 4 | 5/5 | 4/4 | 4/4 | 3/3 | 4/4 | 5/5 | 4/4 | 5/4 | 3.7 | 540 |
 | Loop 5 (f138f53) | 5/5 | 5/5 | 4/4 | 4/4 | 5/5 | 5/5 | 4/4 | 5/4 | 3.9 | 584 |
+| **Loop 5, final (b812aa3)** | 5/5 | 5/5 | 4/4 | 4/4 | 5/5 | 5/5 | 4/4 | 5/4 | 4.4 | 685 |
 
 Public page, read cold (loop 5): what it is 4, what is waiting 4, nothing that should not be public 4, phone 5. Their per-loop tables are in cl-6.synthetic's repository, status-dashboard-scores-loop*-2026-11-28.md. The page height and word count rose after loop 2 because it carries real content (heartbeat, briefing times, "what changed", grant text, one-way lines, checked times), not because the design grew. I have not scored my own work.
+
+Final read (cl-6.synthetic, b812aa3): 685 words, 4.4 phone screens (6.1 at 320 px, 3.4 at 1280), no sideways scroll, Copy copies exactly the words. d is 4 only for the comment-box card's generic "where" (the data); g is 4 because rows need a tap and 16 are folded (a deliberate choice: Can wait is closed). The words and screens rose from loop 3 to 5 because the page carries real content (heartbeat, grant text, one-way marks, checked times), not because the design grew.
 
 ## What is left
 
 - cl-6.dev: build public mode from questions.json at 0e31813 or later (snapshot drops non-public items, with a test; Copy copies only `answer_line`; the strikes line carries no date and no link until the page is live).
-- cl-6.synthetic: score the version with the one-way lines (cac9917 or later), which they have not counted.
 - Data (cl-6.decisions): `where` is still generic ("any session (conductor's or cl-6.decisions')") on most items; per-card `checked_at`, `unblocks`, `recommended` are in the file.
 - Dinis: yes to /admin/ (the admin-build question) so admin mode can be built; signed answers are a later step with cl-6.security.
