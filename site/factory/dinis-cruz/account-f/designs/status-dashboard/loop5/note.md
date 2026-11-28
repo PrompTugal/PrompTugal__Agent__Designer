@@ -81,3 +81,12 @@ cl-6.security (02:42 UTC, relayed by the conductor): naming `strikes.london.plac
 cl-6.decisions set `one_way` on 13 items, each with a `one_way_reason`, and made `checked_at` real per item (date only where no time is known). card_schema.one_way_rule says which session counts for each kind: cl-6.abp's for keys, rules and merges; cl-6.maestro's for session starts and resets; for legal and money calls, any session where decisions can verify his words. A pasted line counts; words relayed by an agent do not, until signed admin answers are adopted.
 
 The card now builds its line from the data: a header mark ("One-way door"), and a boxed line "One-way door: <reason>. Only your own words, typed by you in <the session in where>, count. A line you paste yourself counts; words relayed by an agent, or an answer button on this page, do not." "Facts checked" shows on every card again, now with the item's own time (or date). Admin mode: 4.4 phone screens, 712 words (the three Now cards are longer by the one-way line and the checked time); public page 1.3 screens, 170 words. The one-way line is the only new text: it replaces nothing and is worth the length because the route is the point of the card.
+
+## Update, 28 Nov 03:35 UTC: cl-6.synthetic's reading of the one-way lines (cac9917)
+
+Loop 5 admin at cac9917, phone / desktop: 5/5, 5/5, 4/4, 4/4, 5/5, 5/5, 4/4, 5/4 (same as f138f53). Their points, and the changes:
+1. **The one-way box contradicted itself** ("typed by you ... count", then "a line you paste yourself counts"). One sentence now, once: "Only words you give yourself count, typed or pasted by you in the session the card names. Words relayed by an agent, or a button on this page, do not."
+2. **The 35-word box repeated on every one-way card** (0.5 screen, 128 words). The rule is now said once, in a boxed note above Decide now. Each one-way card keeps its header mark and one short line, "One-way door: <reason>." The session is the card's "Where". Decisions' own `one_way_line` (four items whose "where" is not a session) is shown as written.
+3. **Two "checked" times side by side.** The top line now says "list updated 28 Nov 02:30 UTC"; a card says "Facts checked <its own time>".
+4. The comment-box card's "Where" is "any session (conductor's or cl-6.decisions')": the data, for cl-6.decisions.
+Measures: admin mode 4.4 phone screens, 695 words (6.2 screens at 320 px before the change).
