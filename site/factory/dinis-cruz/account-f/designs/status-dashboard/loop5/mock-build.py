@@ -16,6 +16,8 @@ def hm(s): return f"{int(s[8:10])} {dt.date.fromisoformat(s[:10]).strftime('%b')
 BTN='<button type="button" aria-label="Copy this answer" onclick="navigator.clipboard&&navigator.clipboard.writeText(this.previousElementSibling.textContent)">Copy</button>'
 def oneway(x):
     if not x.get('one_way'): return ''
+    if x.get('one_way_line'):
+        return f'<p class="ow">{esc(x["one_way_line"])}</p>' if x['one_way_line'].lower().startswith('one-way door') else f'<p class="ow"><b>One-way door.</b> {esc(x["one_way_line"])}</p>'
     w=(x.get('where') or '').split(';')[0].split(' (')[0]
     reason=esc(x.get('one_way_reason') or '')
     return f'<p class="ow"><b>One-way door{(": "+reason) if reason else ""}.</b> Only your own words, typed by you in {esc(w)}, count. A line you paste yourself counts; words relayed by an agent, or an answer button on this page, do not.</p>'
