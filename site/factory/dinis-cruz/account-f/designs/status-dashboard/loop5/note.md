@@ -31,3 +31,23 @@ Build now: public mode as above, with the snapshot drop and its test. Waits for 
 ## Update, 28 Nov 02:30 UTC (questions.json at 06ea0a6)
 
 cl-6.decisions confirmed the public-card rule above (card_schema.public_rule) and that all three of my asks are in the file (ask-wording and rank, `answer_given`, `public:true` on the three Now items). The mock was rebuilt from 06ea0a6. The page must honour `public` only once cl-6.dev's sync filters non-public items out, with its test.
+
+## Update, 28 Nov 02:40 UTC: cl-6.synthetic's loop 3 scores, and admin mode revised (questions.json at 254c240)
+
+cl-6.synthetic's scores, phone / desktop, 1 to 5 (a top decision in 10 s; b clear unopened; c cost of waiting; d answer without hunting; e information versus decision; f next briefing; g nothing cut or hidden; h phone). Loop 1's f was revised by them from 3 to 2, because its time was an example.
+
+| | a | b | c | d | e | f | g | h |
+|---|---|---|---|---|---|---|---|---|
+| Live page | 2 / 2 | 2 / 2 | 1 / 1 | 2 / 2 | 1 / 1 | 1 / 1 | 1 / 1 | 2 / 3 |
+| Loop 1 | 5 / 5 | 4 / 4 | 3 / 3 | 4 / 4 | 3 / 3 | 2 / 2 | 4 / 4 | 5 / 4 |
+| Loop 2 | 5 / 5 | 4 / 4 | 4 / 4 | 4 / 4 | 3 / 3 | 2 / 2 | 4 / 4 | 5 / 4 |
+| Loop 3 | 5 / 5 | 4 / 4 | 4 / 4 | 4 / 4 | 4 / 4 | 5 / 5 | 4 / 4 | 5 / 4 |
+
+Their table: https://github.com/PrompTugal/PrompTugal__Agent__Synthetic/blob/dev/site/factory/dinis-cruz/account-f/status-dashboard-scores-loop3-2026-11-28.md . Loops 4 and 5 are not yet scored.
+
+Changes made in admin mode after their loop 3 read and the conductor's two points:
+- **Blocked has its own line.** "Running fine" no longer holds the 17 blocked agents or the 6 data sources with a problem: a boxed "Needs a look" group above it carries "17 agents are blocked" and "6 data sources have a problem", each with a link to see which. "Running fine" is only what is fine (26 agents idle, 23 datasets fresh, 1 archive).
+- **No Copy on a template.** An answer with a fill-in (for example "/app/ is now: <one sentence>") shows "Write your own" in a dashed box and no Copy button.
+- **Public mode** is rebuilt from 254c240; the three summaries no longer end "Waiting on Dinis" (the tag says it); 1.4 phone screens, 179 words; admin mode 4.0 screens, 599 words.
+
+Open, and not mine to change in the design (the data): (1) the "this week" answer lines are long paragraphs (cl-6.decisions is shortening them: a short `answer_line` plus a scope line under Details); (2) `where` says "any session (conductor's or cl-6.decisions')" on most items: it should name the one agent the answer goes to; (3) no recommended answer on Dinis's own calls, by decisions' rule.

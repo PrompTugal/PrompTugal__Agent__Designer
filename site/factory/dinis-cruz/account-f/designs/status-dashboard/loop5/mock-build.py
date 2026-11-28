@@ -18,6 +18,8 @@ def answer(x):
     a=x['answer_line'].strip(); rec=x.get('recommended')
     if x['kind']=='information' or a.startswith('('):
         txt=a.strip('()'); return f'<div class="ans do"><div class="al">{"Pass this on" if x["kind"]=="information" else "Do this yourself"}</div><div class="line">{esc(txt[:1].upper()+txt[1:])}</div></div>'
+    if '<' in a and '>' in a:
+        return f'<div class="ans do"><div class="al">Write your own</div><div class="line">{esc(a)}</div></div>'
     alts=[o['label'] for o in x['options']] if x.get('options') else [s.strip() for s in re.split(r'\s+\|\s+',a) if s.strip()]
     def one(s):
         mark=' <span class="rec">Recommended by '+esc(rec['by'])+'</span>' if rec and rec['answer'].strip().lower()==s.strip().lower() else ''
@@ -59,7 +61,7 @@ body_=f'''<div class="w"><h1>What needs you</h1>
 <h2>This week ({len(week)})</h2><ul class="rows">{"".join(row(x,'◐',i+1) for i,x in enumerate(week))}</ul>
 <h2>Can wait ({len(later)})</h2><details><summary>Show the {len(later)} that can wait</summary><ul class="rows">{"".join(row(x,'○',i+1) for i,x in enumerate(later))}</ul></details>
 <h2>What changed since you last looked</h2><ul class="chg">{ch}</ul>
-<h2>Running fine</h2><p>43 agents: 26 idle, 17 blocked. <a href="#">Every agent by desk</a></p><p>30 datasets: 23 fresh, 1 archive. <a href="#">Every dataset</a></p><div class="flag"><b>Needs a look:</b> 6 data sources with a problem. <a href="#">See which</a></div>
+<h2>Running fine</h2><div class="flag"><b>Needs a look</b><br>17 agents are blocked. <a href="#">See each one and what it waits on</a><br>6 data sources have a problem. <a href="#">See which</a></div><p style="margin-top:10px">Running fine: 26 agents idle, 23 datasets fresh, 1 archive. <a href="#">Every agent by desk</a> · <a href="#">Every dataset</a></p>
 <h2>Answered ({len(ans)})</h2><p class="mono">{esc(ans[0]["title"]) if ans else "none"}{(": "+chr(8220)+esc(ans[0].get("answer_given",""))+chr(8221)) if ans and ans[0].get("answer_given") else ""}</p></div>'''
 open(out,'w').write('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Status</title><style>'+css+'</style></head><body>'+body_+'</body></html>')
 print(len(now),len(week),len(later),len(ans))
