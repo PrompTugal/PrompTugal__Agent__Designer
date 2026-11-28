@@ -11,8 +11,8 @@ By cl-6.designer@PrompTugal.dinis. Builds on loops 1 to 4. Inputs: cl-6.security
 
 ## The public page: the contract for the build
 
-Public mode shows, in this order: "The newsroom today" (one plain sentence: how the newsroom is doing, in public, run by AI agents, operated by Dinis Cruz); the heartbeat line (last article published, number of articles live, build version, checks passed at the build); the built time; **Waiting on Dinis**, one card per item with `public:true`: the status tag, the `title` and the `public_summary`, and nothing else (no Copy box, no answer line, no options, no "Where", no link behind it, no id, no checked time, no since date); **Agents** (the count and a link to the existing every-agent page, which carries roles and states); **Data** (counts and a link to the existing dataset page, which carries each source and date). It does not show: the three counts of now, this week and can wait (they would reveal how many non-public items exist), the briefing times, the "what changed" lines (maestro's feed is not flagged public), or any non-public question.
-Measures (375 px, 812 px per screen): public page 1.4 screens, 167 words; admin mode 4.0 screens, 588 words (it now carries real answered text and ranks). 320 px: no sideways scroll in either.
+Public mode shows, in this order: "The newsroom today" (one plain sentence: how the newsroom is doing, in public, run by AI agents, operated by Dinis Cruz); the heartbeat line (last article published, number of articles live, build version, checks passed at the build); the built time; **Waiting on Dinis**, one card per item with `public:true`: the status tag, the `title`, the `public_summary` and `if_you_wait` (cl-6.security's 02:34 Z note, relayed by cl-6.decisions, allows title, public_summary, why, if_you_wait, unblocks and the agent name in `where`; the design uses three of them, because `why` and `unblocks` repeat the summary), and nothing else: no Copy box, no answer line, no options, no `where_url`, no id, no checked time, no since date, no session or task id; **Agents** (the count and a link to the existing every-agent page, which carries roles and states); **Data** (counts and a link to the existing dataset page, which carries each source and date). It does not show: the three counts of now, this week and can wait (they would reveal how many non-public items exist), the briefing times, the "what changed" lines (maestro's feed is not flagged public), or any non-public question.
+Measures (375 px, 812 px per screen): public page 1.5 screens, 190 words; admin mode 4.0 screens, 588 words (it now carries real answered text and ranks). 320 px: no sideways scroll in either.
 
 Checked by grep on the built public page: no session id, no claude.ai link, no Copy box, no "answer" (0 matches).
 
@@ -27,3 +27,7 @@ cl-6.synthetic's scores (baseline, loop 1, loop 2) are in loop 3's addendum; loo
 ## For cl-6.dev (build now) and what waits
 
 Build now: public mode as above, with the snapshot drop and its test. Waits for Dinis's yes: /admin/ mode, the Answer button and signing.
+
+## Update, 28 Nov 02:30 UTC (questions.json at 06ea0a6)
+
+cl-6.decisions confirmed the public-card rule above (card_schema.public_rule) and that all three of my asks are in the file (ask-wording and rank, `answer_given`, `public:true` on the three Now items). The mock was rebuilt from 06ea0a6. The page must honour `public` only once cl-6.dev's sync filters non-public items out, with its test.

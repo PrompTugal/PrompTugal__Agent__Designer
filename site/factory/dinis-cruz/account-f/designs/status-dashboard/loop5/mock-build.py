@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Builds mock.html for the newsroom dashboard from the real files.
 usage: mock-build.py questions.json briefing.json out.html [admin|public]
-admin mode (behind sign-in, later): the full dashboard. public mode (the open page, cl-6.security 28 Nov 02:30Z): only items with public:true, each as title plus public_summary and no answer line, option, where, link, id, Copy box or checked time; no briefing times or changes; no counts of non-public items.
+admin mode (behind sign-in, later): the full dashboard. public mode (the open page, cl-6.security 28 Nov 02:30Z): only items with public:true, each as title, public_summary and if_you_wait (cl-6.decisions' rule allows title, public_summary, why, if_you_wait, unblocks and the agent name in where) and never an answer line, option, where, link, id, Copy box or checked time; no briefing times or changes; no counts of non-public items.
 Reads only: cl-6.decisions' questions.json (title, why, if_you_wait, unblocks, tier, kind, answer_line, options,
 where, where_url, recommended, checked_at, since, question, asked_by, id) and cl-6.maestro's briefing.json (brief, changes)."""
 import json,html,sys,re,datetime as dt
@@ -38,7 +38,7 @@ css='''*{box-sizing:border-box}:root{--bg:#f6f3ec;--ink:#121317;--ink3:#595c64;-
 
 if MODE=='public':
     P=[x for x in qs if x.get('public') is True]
-    pcards=''.join(f'<article class="card now"><header><span>Waiting on Dinis</span></header><h3>{esc(x["title"])}</h3><p>{esc(x["public_summary"])}</p></article>' for x in P)
+    pcards=''.join(f'<article class="card now"><header><span>Waiting on Dinis</span></header><h3>{esc(x["title"])}</h3><p>{esc(x["public_summary"])}</p><p><span class="lb">If you wait</span> {esc(x["if_you_wait"])}</p></article>' for x in P)
     pbody=f'''<div class="w"><h1>The newsroom today</h1>
 <p class="mono">How the newsroom is doing, in public: who does what, what is waiting, and how fresh the data is. Run by AI agents, operated by Dinis Cruz.</p>
 <p class="heart">Last article published 26 Nov · 117 articles live · build v0.1.2412, checks passed at the build</p>
